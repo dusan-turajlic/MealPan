@@ -1,5 +1,6 @@
 "use client";
 
+import { forwardRef } from "react";
 import { ResolvedMeal } from "@/lib/types";
 import OptionTabBar from "./OptionTabBar";
 import OptionDetail from "./OptionDetail";
@@ -12,11 +13,14 @@ interface Props {
   exact: boolean;
 }
 
-export default function MealSection({ meal, profileId, selectedIndex, onSelect, exact }: Props) {
+const MealSection = forwardRef<HTMLDivElement, Props>(function MealSection(
+  { meal, profileId, selectedIndex, onSelect, exact },
+  ref
+) {
   const activeOption = meal.options[selectedIndex] ?? meal.options[0];
 
   return (
-    <div className="bg-surface border border-rule rounded-2xl p-5 space-y-3 shadow-sm">
+    <div ref={ref} className="bg-surface border border-rule rounded-2xl p-5 space-y-3 shadow-sm">
       <div className="flex items-center justify-between">
         <h3 className="text-base font-semibold text-ink">{meal.label}</h3>
         {activeOption && (
@@ -40,4 +44,6 @@ export default function MealSection({ meal, profileId, selectedIndex, onSelect, 
       )}
     </div>
   );
-}
+});
+
+export default MealSection;

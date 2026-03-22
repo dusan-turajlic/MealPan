@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useCallback, useEffect, useMemo } from "react";
+import { useState, useCallback, useEffect, useMemo, useRef } from "react";
 import { ResolvedMealPlan, MacroValues, ResolvedIngredient } from "@/lib/types";
 import { sumMacros } from "@/lib/calculateMacros";
 import { loadSwaps, saveSwaps } from "@/lib/swap/storage";
@@ -10,6 +10,24 @@ import InfoAccordion from "./InfoAccordion";
 import DailyTotalsBar from "./DailyTotalsBar";
 import MealSection from "./MealSection";
 import ThemeToggle from "./ThemeToggle";
+
+const DAY_START_MIN = 6 * 60;   // 06:00
+const DAY_END_MIN   = 22 * 60;  // 22:00
+
+function getInitialProfileIndex(profiles: ResolvedMealPlan["profiles"]): number {
+  const today = new Date().getDay();
+  const idx = profiles.findIndex(p => p.days?.includes(today));
+  return idx >= 0 ? idx : 0;
+}
+
+function getCurrentMealIndex(mealCount: number): number {
+  const now = new Date();
+  const nowMin = now.getHours() * 60 + now.getMinutes();
+  if (nowMin <= DAY_START_MIN) return 0;
+  if (nowMin >= DAY_END_MIN)   return mealCount - 1;
+  const slot = (nowMin - DAY_START_MIN) / (DAY_END_MIN - DAY_START_MIN);
+  return Math.min(Math.floor(slot * mealCount), mealCount - 1);
+}
 
 interface Props {
   plan: ResolvedMealPlan;
@@ -21,15 +39,26 @@ type SelectedOptions = Record<string, number>; // mealId → optionIndex
 const SWAPPABLE: SwappableCategory[] = ['protein', 'carb', 'fat'];
 
 export default function MealPlanClient({ plan, name }: Props) {
-  const [activeProfileIndex, setActiveProfileIndex] = useState(0);
+  const [activeProfileIndex, setActiveProfileIndex] = useState(
+    () => getInitialProfileIndex(plan.profiles)
+  );
   const [selectedOptions, setSelectedOptions] = useState<SelectedOptions>({});
   const [swaps, setSwaps] = useState<Record<string, string>>({});
+  const mealRefs = useRef<Record<string, HTMLDivElement | null>>({});
 
   const activeProfile = plan.profiles[activeProfileIndex];
 
   useEffect(() => {
     setSwaps(loadSwaps(name));
   }, [name]);
+
+  useEffect(() => {
+    const meals = activeProfile.meals;
+    if (meals.length === 0) return;
+    const idx = getCurrentMealIndex(meals.length);
+    const target = meals[idx];
+    mealRefs.current[target.id]?.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   const categoryPool: CategoryPool = useMemo(() => {
     const pool = new Map<SwappableCategory, ResolvedIngredient[]>();
@@ -145,13 +174,14 @@ export default function MealPlanClient({ plan, name }: Props) {
         </div>
 
         {/* Scrollable content */}
-        <div className="px-4 pb-8 space-y-4">
+        <div className="px-4 pb-[50vh] space-y-4">
           {/* Info accordion */}
           {plan.info.length > 0 && <InfoAccordion sections={plan.info} />}
 
           {/* Meal sections */}
           {activeProfile.meals.map((meal) => (
             <MealSection
+              ref={(el) => { mealRefs.current[meal.id] = el; }}
               key={meal.id}
               meal={meal}
               profileId={activeProfile.id}

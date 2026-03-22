@@ -28,6 +28,7 @@
     {
       "id": "vardagar",
       "label": "Vardagar",
+      "days": [1, 2, 3, 4, 5],
       "meals": [
         {
           "id": "frukost",
@@ -995,6 +996,7 @@
     {
       "id": "veckoslut",
       "label": "Veckoslut",
+      "days": [0, 6],
       "meals": [
         {
           "id": "brunch",

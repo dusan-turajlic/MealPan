@@ -46,6 +46,7 @@ export class MealPlanResolver {
     return {
       id: profile.id,
       label: profile.label,
+      days: profile.days,
       meals,
       defaultDailyTotals,
     };

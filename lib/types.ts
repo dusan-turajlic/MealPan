@@ -15,6 +15,7 @@ export interface InfoSection {
 export interface PlanProfile {
   id: string; // "weekdays", "weekends", "cutting", "bulking"
   label: string; // "Weekdays", "Weekends"
+  days?: number[]; // JS Date.getDay(): 0=Sun … 6=Sat. e.g. [1,2,3,4,5]
   meals: MealDefinition[];
 }
 
@@ -79,6 +80,7 @@ export interface ResolvedMeal {
 export interface ResolvedProfile {
   id: string;
   label: string;
+  days?: number[];
   meals: ResolvedMeal[];
   defaultDailyTotals: MacroValues;
 }
