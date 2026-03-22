@@ -1,0 +1,77 @@
+import { Locale } from './locales';
+
+const en = {
+  dailyTotal: 'Daily total',
+  guidelinesTips: 'Guidelines & tips',
+  noNutritionalData: 'No nutritional data',
+  macroProtein: 'P',
+  macroCarbs: 'C',
+  macroFat: 'F',
+  backToHome: 'Back to home',
+  homeHeading: 'Meal Plan',
+  homeDescription: 'Navigate to your personal meal plan using the link below.',
+  openDemoPlan: 'Open Demo Plan',
+  pageNotFoundTitle: 'Page not found',
+  pageNotFoundMessage: 'Check the address and try again.',
+  planNotFoundTitle: 'Plan not found',
+  planNotFoundMessage: 'Check the link and try again.',
+  categoryProtein: 'Protein',
+  categoryCarb: 'Carb',
+  categoryFat: 'Fat',
+  categoryMixed: 'Mixed',
+  swapIngredient: 'Swap',
+  swapReset: 'Original',
+  swapPickerTitle: 'Choose a swap',
+};
+
+export type Translations = typeof en;
+
+const sv: Translations = {
+  dailyTotal: 'Dagens totalt',
+  guidelinesTips: 'Riktlinjer & tips',
+  noNutritionalData: 'Ingen näringsvärden',
+  macroProtein: 'P',
+  macroCarbs: 'K',
+  macroFat: 'F',
+  backToHome: 'Tillbaka',
+  homeHeading: 'Måltidsplan',
+  homeDescription: 'Navigera till din personliga måltidsplan via länken nedan.',
+  openDemoPlan: 'Öppna demoplanen',
+  pageNotFoundTitle: 'Sidan hittades inte',
+  pageNotFoundMessage: 'Kontrollera adressen och försök igen.',
+  planNotFoundTitle: 'Planen hittades inte',
+  planNotFoundMessage: 'Kontrollera länken och försök igen.',
+  categoryProtein: 'Protein',
+  categoryCarb: 'Kolhydrat',
+  categoryFat: 'Fett',
+  categoryMixed: 'Blandat',
+  swapIngredient: 'Byt',
+  swapReset: 'Original',
+  swapPickerTitle: 'Välj alternativ',
+};
+
+const hr: Translations = {
+  dailyTotal: 'Dnevni ukupno',
+  guidelinesTips: 'Smjernice i savjeti',
+  noNutritionalData: 'Nema nutritivnih podataka',
+  macroProtein: 'B',
+  macroCarbs: 'UH',
+  macroFat: 'M',
+  backToHome: 'Natrag',
+  homeHeading: 'Plan prehrane',
+  homeDescription: 'Navigirajte do svog osobnog plana prehrane putem donje veze.',
+  openDemoPlan: 'Otvori demo plan',
+  pageNotFoundTitle: 'Stranica nije pronađena',
+  pageNotFoundMessage: 'Provjerite adresu i pokušajte ponovo.',
+  planNotFoundTitle: 'Plan nije pronađen',
+  planNotFoundMessage: 'Provjerite vezu i pokušajte ponovo.',
+  categoryProtein: 'Bjelančevine',
+  categoryCarb: 'Ugljikohidrati',
+  categoryFat: 'Mast',
+  categoryMixed: 'Miješano',
+  swapIngredient: 'Zamijeni',
+  swapReset: 'Original',
+  swapPickerTitle: 'Odaberi zamjenu',
+};
+
+export const translations: Record<Locale, Translations> = { en, sv, hr };

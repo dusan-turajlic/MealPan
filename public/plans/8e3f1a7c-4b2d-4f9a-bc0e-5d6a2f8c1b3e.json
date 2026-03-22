@@ -1,0 +1,1601 @@
+{
+  "version": 1,
+  "description": "Proteinrik kost med lågt GI – blodsockerkontroll",
+  "exact": false,
+  "info": [
+    {
+      "title": "Regelbundna måltider – bryt cirkeln",
+      "body": "Äter du oregelbundet hopas blodsockret upp och rasar – vilket leder till okontrollerat sug och överdrivet ätande. Ät 5 gånger per dag med 3–4 timmars mellanrum. Skippa inte en måltid, även om du inte är hungrig: det förebygger nästa attack av hetsätning."
+    },
+    {
+      "title": "Protein håller dig mätt",
+      "body": "Sikta på 25–30 gram protein per måltid. Keso, grekisk yoghurt, ägg och kycklingfilé är billiga, lättillgängliga källor i finska matbutiker. Tillräckligt med protein dämpar sötsug och håller blodsockret stabilare hela dagen."
+    },
+    {
+      "title": "Lågt GI – insulinresistens under kontroll",
+      "body": "Vid insulinresistens reagerar kroppen dåligt på kolhydrater. Välj enbart livsmedel med lågt glykemiskt index: havregryn (GI ≈55), sötpotatis (GI ≈44), röda linser (GI ≈29), bär (GI ≈25–40) och knäckebröd (GI ≈50). Undvik vitt ris, vitt bröd, vit pasta och sockerhaltiga livsmedel."
+    },
+    {
+      "title": "Fiber och grönsaker – ät dem först",
+      "body": "Börja varje lunch och middag med broccoli, gurka, tomat eller sallad. Fiber bromsar glukosupptaget och jämnar ut insulinsvaret avsevärt. Det räcker med en handfull grönsaker innan övrig mat."
+    },
+    {
+      "title": "Smarta mellanmål",
+      "body": "Ha alltid ett proteinhaltigt mellanmål redo: keso, grekisk yoghurt eller ett kokt ägg. När hungern slår till – ät mellanmålet. Hoppa inte över det. Ett kontrollerat mellanmål förhindrar att du äter för mycket vid nästa måltid."
+    }
+  ],
+  "profiles": [
+    {
+      "id": "vardagar",
+      "label": "Vardagar",
+      "meals": [
+        {
+          "id": "frukost",
+          "label": "Frukost",
+          "options": [
+            {
+              "id": "havregrynsgrot",
+              "label": "Havregrynsgröt med keso & blåbär",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489944102",
+                    "name": "Lidl havregryn",
+                    "category": "carb",
+                    "gPerDl": 40,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 40,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7394376616037",
+                    "name": "Oatly havredryck",
+                    "category": "mixed",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "dl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (fettfri)",
+                    "category": "protein",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405086716",
+                    "name": "Pirkka frysta blåbär",
+                    "category": "carb",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "aggröra-knackebrod",
+              "label": "Äggröra & knäckebröd",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6430029764449",
+                    "name": "Kieku frilandsägg L",
+                    "category": "protein",
+                    "packageSizeG": 64,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (fettfri)",
+                    "category": "protein",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410500095668",
+                    "name": "Finn Crisp Original knäckebröd",
+                    "category": "carb",
+                    "packageSizeG": 250,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 31,
+                  "unit": "g"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "formiddagsmellanmal",
+          "label": "Förmiddagsmellanmål",
+          "options": [
+            {
+              "id": "proteinpudding-choklad",
+              "label": "Proteinpudding choklad",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489216162",
+                    "name": "Milbona proteinpudding choklad",
+                    "category": "protein",
+                    "packageSizeG": 152,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "kpl"
+                }
+              ]
+            },
+            {
+              "id": "skyr-blåbär",
+              "label": "Skyr & blåbär",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489118213",
+                    "name": "Milbona skyr blåbär",
+                    "category": "protein",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405086716",
+                    "name": "Pirkka frysta blåbär",
+                    "category": "carb",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-jordgubbar",
+              "label": "Skyr & jordgubbar",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491224",
+                    "name": "Milbona skyr jordgubbe",
+                    "category": "protein",
+                    "packageSizeG": 450,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "447",
+                    "name": "Mansikka (färsk)",
+                    "category": "carb",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-hallon",
+              "label": "Skyr & hallon",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491231",
+                    "name": "Milbona skyr hallon",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405181091",
+                    "name": "Pirkka suomalainen vadelma",
+                    "category": "carb",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-jordgubbe-flavor",
+              "label": "Milbona skyr jordgubbe",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491224",
+                    "name": "Milbona skyr jordgubbe",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-hallon-flavor",
+              "label": "Milbona skyr hallon",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491231",
+                    "name": "Milbona skyr hallon",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-blabar-flavor",
+              "label": "Milbona skyr blåbär",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489118213",
+                    "name": "Milbona skyr blåbär",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 500
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-vanilj",
+              "label": "Milbona skyr vanilj",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491248",
+                    "name": "Milbona skyr vanilj",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "agg-fetaost",
+              "label": "Kokta ägg & fetaost",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6430029764449",
+                    "name": "Kieku frilandsägg L",
+                    "category": "protein",
+                    "packageSizeG": 64,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "6416710300875",
+                    "name": "Filos fetaost",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 30,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "keso-gurka",
+              "label": "Keso med gurka",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (fettfri)",
+                    "category": "protein",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "346",
+                    "name": "Gurka",
+                    "category": "mixed",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "kokta-agg",
+              "label": "Kokta ägg",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6430029764449",
+                    "name": "Kieku frilandsägg L",
+                    "category": "protein",
+                    "packageSizeG": 64,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                }
+              ]
+            },
+            {
+              "id": "natthavreburk",
+              "label": "Overnight oats",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489944102",
+                    "name": "Lidl havregryn",
+                    "category": "carb",
+                    "gPerDl": 40,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 30,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "4056489491217",
+                    "name": "Milbona skyr naturell",
+                    "category": "protein",
+                    "packageSizeG": 450,
+                    "gPerDl": 100,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405086716",
+                    "name": "Pirkka frysta blåbär",
+                    "category": "carb",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lunch",
+          "label": "Lunch",
+          "options": [
+            {
+              "id": "pikok-kyckling-sotpotatis",
+              "label": "Förkokad kyckling & sötpotatis",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Förkokad kycklingfilé",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "30223",
+                    "name": "Sötpotatis",
+                    "category": "carb",
+                    "packageSizeG": 200,
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 1,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405067555",
+                    "name": "Pirkka fryst broccoli",
+                    "category": "mixed",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow extra virgin olivolja",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 10,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "kalkon-linser",
+              "label": "Kalkon & röda linser",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6409100022549",
+                    "name": "Kariniemi kalkonkött",
+                    "category": "protein",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191145771",
+                    "name": "Coop röda linser (färdigkokta)",
+                    "category": "mixed",
+                    "packageSizeG": 230,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 115,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410402011865",
+                    "name": "Pirkka krossade tomater",
+                    "category": "mixed",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 250,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405067555",
+                    "name": "Pirkka fryst broccoli",
+                    "category": "mixed",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "kyckling-potatis-fryst-paprika",
+              "label": "Kyckling & potatisar med fryst paprika",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Förkokad kycklingfilé",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "2033",
+                    "name": "Kokta potatisar",
+                    "category": "carb",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "355",
+                    "name": "Paprika (blandad, fryst)",
+                    "category": "mixed",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow extra virgin olivolja",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 10,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "kyckling-potatis-farsk-paprika",
+              "label": "Kyckling & potatisar med färsk paprika",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Förkokad kycklingfilé",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "2033",
+                    "name": "Kokta potatisar",
+                    "category": "carb",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "355",
+                    "name": "Paprika (färsk)",
+                    "category": "mixed",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow extra virgin olivolja",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 10,
+                  "unit": "g"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "middag",
+          "label": "Middag",
+          "options": [
+            {
+              "id": "kalkonbolognese-pasta",
+              "label": "Kalkonbolognese med fullkornspasta",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6409100022549",
+                    "name": "Kariniemi kalkonkött",
+                    "category": "protein",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6411200100256",
+                    "name": "Torino fullkornspasta",
+                    "category": "carb",
+                    "packageSizeG": 500,
+                    "gPerDl": 90,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 45,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410402011865",
+                    "name": "Pirkka krossade tomater",
+                    "category": "mixed",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 250,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405067555",
+                    "name": "Pirkka fryst broccoli",
+                    "category": "mixed",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow extra virgin olivolja",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 10,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "pikok-kyckling-linsgrytan",
+              "label": "Förkokad kyckling & linsgrytan",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Förkokad kycklingfilé",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191145771",
+                    "name": "Coop röda linser (färdigkokta)",
+                    "category": "mixed",
+                    "packageSizeG": 230,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 115,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410402011865",
+                    "name": "Pirkka krossade tomater",
+                    "category": "mixed",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 250,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405067555",
+                    "name": "Pirkka fryst broccoli",
+                    "category": "mixed",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow extra virgin olivolja",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 10,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "kalkon-basmatiris",
+              "label": "Kalkon & basmatiris med spenat",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6409100022549",
+                    "name": "Kariniemi kalkonkött",
+                    "category": "protein",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "30346",
+                    "name": "Basmatiris (kokt)",
+                    "category": "carb",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410402011865",
+                    "name": "Pirkka krossade tomater",
+                    "category": "mixed",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "34228",
+                    "name": "Spenat (fryst)",
+                    "category": "mixed",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow extra virgin olivolja",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 10,
+                  "unit": "g"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kvallsmal",
+          "label": "Kvällsmål",
+          "options": [
+            {
+              "id": "proteinpudding-vanilj",
+              "label": "Proteinpudding vanilj",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489216155",
+                    "name": "Milbona proteinpudding vanilj",
+                    "category": "protein",
+                    "packageSizeG": 152,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "kpl"
+                }
+              ]
+            },
+            {
+              "id": "skyr-blåbär-em",
+              "label": "Skyr & blåbär",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489118213",
+                    "name": "Milbona skyr blåbär",
+                    "category": "protein",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405086716",
+                    "name": "Pirkka frysta blåbär",
+                    "category": "carb",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-jordgubbar-em",
+              "label": "Skyr & jordgubbar",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491224",
+                    "name": "Milbona skyr jordgubbe",
+                    "category": "protein",
+                    "packageSizeG": 450,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "447",
+                    "name": "Mansikka (färsk)",
+                    "category": "carb",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-hallon-em",
+              "label": "Skyr & hallon",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491231",
+                    "name": "Milbona skyr hallon",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405181091",
+                    "name": "Pirkka suomalainen vadelma",
+                    "category": "carb",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-jordgubbe-flavor-em",
+              "label": "Milbona skyr jordgubbe",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491224",
+                    "name": "Milbona skyr jordgubbe",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-hallon-flavor-em",
+              "label": "Milbona skyr hallon",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491231",
+                    "name": "Milbona skyr hallon",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-blabar-flavor-em",
+              "label": "Milbona skyr blåbär",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489118213",
+                    "name": "Milbona skyr blåbär",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 500
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-vanilj-em",
+              "label": "Milbona skyr vanilj",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491248",
+                    "name": "Milbona skyr vanilj",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "knackebrod-keso",
+              "label": "Knäckebröd & keso",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6410500095668",
+                    "name": "Finn Crisp Original knäckebröd",
+                    "category": "carb",
+                    "packageSizeG": 250,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (fettfri)",
+                    "category": "protein",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "veckoslut",
+      "label": "Veckoslut",
+      "meals": [
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "options": [
+            {
+              "id": "proteinpannkakor",
+              "label": "Proteinpannkakor med blåbär",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489944102",
+                    "name": "Lidl havregryn",
+                    "category": "carb",
+                    "gPerDl": 40,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 80,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7394376616037",
+                    "name": "Oatly havredryck",
+                    "category": "mixed",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "dl"
+                },
+                {
+                  "source": {
+                    "barcode": "6430029764449",
+                    "name": "Kieku frilandsägg L",
+                    "category": "protein",
+                    "packageSizeG": 64,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (fettfri)",
+                    "category": "protein",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405086716",
+                    "name": "Pirkka frysta blåbär",
+                    "category": "carb",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "aggröra-knackebrod-yoghurt",
+              "label": "Äggröra med knäckebröd & yoghurt",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6430029764449",
+                    "name": "Kieku frilandsägg L",
+                    "category": "protein",
+                    "packageSizeG": 64,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 3,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "6410500095668",
+                    "name": "Finn Crisp Original knäckebröd",
+                    "category": "carb",
+                    "packageSizeG": 250,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6408430407545",
+                    "name": "Valio A+ grekisk yoghurt",
+                    "category": "protein",
+                    "packageSizeG": 1000,
+                    "gPerDl": 100,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mellanmal",
+          "label": "Mellanmål",
+          "options": [
+            {
+              "id": "proteinpudding-choklad-vs",
+              "label": "Proteinpudding choklad",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489216162",
+                    "name": "Milbona proteinpudding choklad",
+                    "category": "protein",
+                    "packageSizeG": 152,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "kpl"
+                }
+              ]
+            },
+            {
+              "id": "skyr-blåbär-vs",
+              "label": "Skyr & blåbär",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489118213",
+                    "name": "Milbona skyr blåbär",
+                    "category": "protein",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405086716",
+                    "name": "Pirkka frysta blåbär",
+                    "category": "carb",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-jordgubbar-vs",
+              "label": "Skyr & jordgubbar",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491224",
+                    "name": "Milbona skyr jordgubbe",
+                    "category": "protein",
+                    "packageSizeG": 450,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "447",
+                    "name": "Mansikka (färsk)",
+                    "category": "carb",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-hallon-vs",
+              "label": "Skyr & hallon",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491231",
+                    "name": "Milbona skyr hallon",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405181091",
+                    "name": "Pirkka suomalainen vadelma",
+                    "category": "carb",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-jordgubbe-flavor-vs",
+              "label": "Milbona skyr jordgubbe",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491224",
+                    "name": "Milbona skyr jordgubbe",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-hallon-flavor-vs",
+              "label": "Milbona skyr hallon",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491231",
+                    "name": "Milbona skyr hallon",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-blabar-flavor-vs",
+              "label": "Milbona skyr blåbär",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489118213",
+                    "name": "Milbona skyr blåbär",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 500
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-vanilj-vs",
+              "label": "Milbona skyr vanilj",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491248",
+                    "name": "Milbona skyr vanilj",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "agg-fetaost-vs",
+              "label": "Kokta ägg & fetaost",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6430029764449",
+                    "name": "Kieku frilandsägg L",
+                    "category": "protein",
+                    "packageSizeG": 64,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "6416710300875",
+                    "name": "Filos fetaost",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 30,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "keso-gurka-vs",
+              "label": "Keso med gurka",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (fettfri)",
+                    "category": "protein",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "346",
+                    "name": "Gurka",
+                    "category": "mixed",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "middag",
+          "label": "Middag",
+          "options": [
+            {
+              "id": "pikok-kyckling-sotpotatis-vs",
+              "label": "Förkokad kyckling & sötpotatis",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Förkokad kycklingfilé",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 175,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "30223",
+                    "name": "Sötpotatis",
+                    "category": "carb",
+                    "packageSizeG": 200,
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 1,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405067555",
+                    "name": "Pirkka fryst broccoli",
+                    "category": "mixed",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow extra virgin olivolja",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 10,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "kalkon-linsgrytan-vs",
+              "label": "Kalkon & linsgrytan",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6409100022549",
+                    "name": "Kariniemi kalkonkött",
+                    "category": "protein",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191145771",
+                    "name": "Coop röda linser (färdigkokta)",
+                    "category": "mixed",
+                    "packageSizeG": 230,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 115,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410402011865",
+                    "name": "Pirkka krossade tomater",
+                    "category": "mixed",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 250,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405067555",
+                    "name": "Pirkka fryst broccoli",
+                    "category": "mixed",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow extra virgin olivolja",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 10,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "kyckling-potatis-fryst-paprika-vs",
+              "label": "Kyckling & potatisar med fryst paprika",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Förkokad kycklingfilé",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "2033",
+                    "name": "Kokta potatisar",
+                    "category": "carb",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "355",
+                    "name": "Paprika (blandad, fryst)",
+                    "category": "mixed",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow extra virgin olivolja",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 10,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "kyckling-potatis-farsk-paprika-vs",
+              "label": "Kyckling & potatisar med färsk paprika",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Förkokad kycklingfilé",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "2033",
+                    "name": "Kokta potatisar",
+                    "category": "carb",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "355",
+                    "name": "Paprika (färsk)",
+                    "category": "mixed",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow extra virgin olivolja",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 10,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "kalkon-basmatiris-vs",
+              "label": "Kalkon & basmatiris med spenat",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6409100022549",
+                    "name": "Kariniemi kalkonkött",
+                    "category": "protein",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "30346",
+                    "name": "Basmatiris (kokt)",
+                    "category": "carb",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410402011865",
+                    "name": "Pirkka krossade tomater",
+                    "category": "mixed",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "34228",
+                    "name": "Spenat (fryst)",
+                    "category": "mixed",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow extra virgin olivolja",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 10,
+                  "unit": "g"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

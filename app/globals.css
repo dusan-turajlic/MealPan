@@ -1,0 +1,66 @@
+@import "tailwindcss";
+@import "tailwindcss-safe-area";
+
+:root {
+  --color-canvas: #faf9f7;
+  --color-surface: #ffffff;
+  --color-lift: #f2efeb;
+  --color-rule: #e8e2db;
+  --color-ink: #1c1814;
+  --color-dim: #6b5f56;
+  --color-faint: #a89d96;
+  --color-protein: #f97316;
+  --color-carbs: #14b8a6;
+  --color-fat: #a855f7;
+  --color-accent: #f97316;
+  --color-on-accent: #ffffff;
+  --color-pill-active-bg: #1c1814;
+  --color-pill-active-text: #faf9f7;
+}
+
+.dark {
+  --color-canvas: #1a1816;
+  --color-surface: #252220;
+  --color-lift: #2e2b28;
+  --color-rule: #3d3830;
+  --color-ink: #f5f1ec;
+  --color-dim: #a09080;
+  --color-faint: #6b5f56;
+  --color-protein: #fb923c;
+  --color-carbs: #2dd4bf;
+  --color-fat: #c084fc;
+  --color-accent: #fb923c;
+  --color-on-accent: #1a1816;
+  --color-pill-active-bg: #f5f1ec;
+  --color-pill-active-text: #1a1816;
+}
+
+@theme inline {
+  --color-canvas: var(--color-canvas);
+  --color-surface: var(--color-surface);
+  --color-lift: var(--color-lift);
+  --color-rule: var(--color-rule);
+  --color-ink: var(--color-ink);
+  --color-dim: var(--color-dim);
+  --color-faint: var(--color-faint);
+  --color-protein: var(--color-protein);
+  --color-carbs: var(--color-carbs);
+  --color-fat: var(--color-fat);
+  --color-accent: var(--color-accent);
+  --color-on-accent: var(--color-on-accent);
+  --font-sans: var(--font-geist-sans);
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-ink);
+}
+
+/* Hide scrollbar while keeping scroll functionality */
+.scrollbar-none {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
