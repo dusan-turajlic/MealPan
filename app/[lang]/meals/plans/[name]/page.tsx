@@ -1,4 +1,5 @@
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { loadPlan } from "@/lib/loadPlan";
 import { getNutritionSource } from "@/lib/nutrition/registry";
 import { MealPlanResolver } from "@/lib/MealPlanResolver";
@@ -9,6 +10,14 @@ import { isValidLocale } from "@/lib/i18n/locales";
 
 interface Props {
   params: Promise<{ lang: string; name: string }>;
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { lang, name } = await params;
+  const path = `/${lang}/meals/plans/${name}`;
+  return {
+    manifest: `/api/manifest?path=${encodeURIComponent(path)}`,
+  };
 }
 
 export default async function MealPlanPage({ params }: Props) {
