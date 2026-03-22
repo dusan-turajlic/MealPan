@@ -8,12 +8,14 @@ import sharp from "sharp";
 
 const __dir = dirname(fileURLToPath(import.meta.url));
 const svgPath = join(__dir, "logo-source.svg");
+const faviconSvgPath = join(__dir, "favicon-source.svg");
 const outIcons = join(__dir, "..", "public", "icons");
 const outApp = join(__dir, "..", "app");
 
 const BG = { r: 28, g: 24, b: 20, alpha: 1 };
 
 const svgSource = readFileSync(svgPath);
+const faviconSvgSource = readFileSync(faviconSvgPath);
 
 /** For the maskable variant, strip the rounded clip-path for full-bleed. */
 const maskableSvg = Buffer.from(
@@ -51,7 +53,7 @@ for (const { file, size, maskable } of specs) {
 // using the ico-endec approach via raw buffers, or simply output favicon.png
 // and let Next.js serve it. Next.js 13+ auto-serves app/favicon.ico.
 // We write a 32×32 PNG as favicon.ico — browsers accept PNG-in-ICO.
-const faviconBuf = await renderPng(svgSource, 32);
+const faviconBuf = await renderPng(faviconSvgSource, 32);
 const faviconPath = join(outApp, "favicon.ico");
 await sharp(faviconBuf).toFile(faviconPath);
 console.log(`  wrote ${faviconPath}  (32×32)`);

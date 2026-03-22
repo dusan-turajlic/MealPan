@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="clip">
+      <rect width="512" height="512" rx="110"/>
+    </clipPath>
+  </defs>
+  <g clip-path="url(#clip)">
+    <!-- Background -->
+    <rect width="512" height="512" fill="#1c1814"/>
+
+    <!-- Stem -->
+    <rect x="190" y="300" width="132" height="158" rx="28"
+          fill="#fef6e4" stroke="#1c1814" stroke-width="16"/>
+
+    <!-- Cap -->
+    <path d="M 96 318 C 78 228 148 138 256 132 C 364 126 436 226 418 318 Z"
+          fill="#d97706" stroke="#1c1814" stroke-width="16" stroke-linejoin="round"/>
+
+    <!-- Cap highlight -->
+    <ellipse cx="196" cy="218" rx="40" ry="44"
+             fill="#f59e0b" opacity="0.5" transform="rotate(-15 196 218)"/>
+
+    <!-- Gill line -->
+    <path d="M 100 316 Q 256 332 412 318"
+          stroke="#92400e" stroke-width="9" fill="none" stroke-linecap="round"/>
+
+    <!-- RADISH — lower right, overlapping mushroom -->
+    <!-- Left leaf -->
+    <ellipse cx="336" cy="312" rx="20" ry="56"
+             fill="#4ade80" stroke="#1c1814" stroke-width="12"
+             transform="rotate(-24 336 312)"/>
+    <!-- Right leaf -->
+    <ellipse cx="392" cy="308" rx="20" ry="56"
+             fill="#4ade80" stroke="#1c1814" stroke-width="12"
+             transform="rotate(20 392 308)"/>
+    <!-- Stem -->
+    <line x1="362" y1="340" x2="362" y2="362"
+          stroke="#1c1814" stroke-width="12" stroke-linecap="round"/>
+    <!-- Bulb -->
+    <circle cx="362" cy="432" r="84"
+            fill="#f43f5e" stroke="#1c1814" stroke-width="14"/>
+    <!-- White lower highlight -->
+    <ellipse cx="362" cy="488" rx="54" ry="32"
+             fill="#fef6e4"/>
+    <!-- Root -->
+    <path d="M 362 514 Q 366 530 360 546"
+          stroke="#fef6e4" stroke-width="10" fill="none" stroke-linecap="round"/>
+  </g>
+</svg>
