@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Your personal meal plan",
     start_url: "/",
     display: "standalone",
-    background_color: "#0f172a",
-    theme_color: "#0f172a",
+    background_color: "#1c1814",
+    theme_color: "#1c1814",
     icons: [
       {
         src: "/icons/icon-192.png",
@@ -21,7 +21,7 @@ export default function manifest(): MetadataRoute.Manifest {
         type: "image/png",
       },
       {
-        src: "/icons/icon-512.png",
+        src: "/icons/icon-512-maskable.png",
         sizes: "512x512",
         type: "image/png",
         purpose: "maskable",

@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <defs>
+    <clipPath id="icon-clip">
+      <rect width="512" height="512" rx="110"/>
+    </clipPath>
+  </defs>
+
+  <g clip-path="url(#icon-clip)">
+    <!-- Background -->
+    <rect width="512" height="512" fill="#1c1814"/>
+
+    <!-- Paper shadow -->
+    <rect x="155" y="78" width="218" height="314" rx="20" fill="#c8b890"/>
+
+    <!-- Paper body -->
+    <rect x="148" y="70" width="218" height="314" rx="20"
+          fill="#fef6e4" stroke="#1c1814" stroke-width="12"/>
+
+    <!-- Yellow bookmark tab (right edge of paper) -->
+    <rect x="330" y="70" width="36" height="96" rx="6"
+          fill="#fbbf24" stroke="#1c1814" stroke-width="12"/>
+
+    <!-- Blush cheeks -->
+    <ellipse cx="202" cy="191" rx="20" ry="13" fill="#fca5a5" opacity="0.88"/>
+    <ellipse cx="312" cy="191" rx="20" ry="13" fill="#fca5a5" opacity="0.88"/>
+
+    <!-- Eyes: happy arcs (∩ shape — open downward) -->
+    <path d="M 214 163 Q 230 147 246 163"
+          stroke="#1c1814" stroke-width="9" fill="none" stroke-linecap="round"/>
+    <path d="M 268 163 Q 284 147 300 163"
+          stroke="#1c1814" stroke-width="9" fill="none" stroke-linecap="round"/>
+
+    <!-- Smile: simple U-curve -->
+    <path d="M 222 192 Q 257 218 292 192"
+          stroke="#1c1814" stroke-width="8" fill="none"
+          stroke-linecap="round"/>
+
+    <!-- Menu list lines -->
+    <circle cx="178" cy="249" r="6" fill="#1c1814"/>
+    <line x1="196" y1="249" x2="316" y2="249"
+          stroke="#1c1814" stroke-width="9" stroke-linecap="round"/>
+
+    <circle cx="178" cy="281" r="6" fill="#1c1814"/>
+    <line x1="196" y1="281" x2="316" y2="281"
+          stroke="#1c1814" stroke-width="9" stroke-linecap="round"/>
+
+    <circle cx="178" cy="313" r="6" fill="#1c1814"/>
+    <line x1="196" y1="313" x2="287" y2="313"
+          stroke="#1c1814" stroke-width="9" stroke-linecap="round"/>
+
+    <!-- MUSHROOM STEM -->
+    <rect x="98" y="272" width="58" height="56" rx="13"
+          fill="#fef6e4" stroke="#1c1814" stroke-width="11"/>
+
+    <!-- MUSHROOM CAP — dome shape, centered over stem (stem center x=127) -->
+    <path d="M 64 278 C 56 216 90 170 127 166 C 164 162 198 210 198 276 Z"
+          fill="#d97706" stroke="#1c1814" stroke-width="11" stroke-linejoin="round"/>
+    <!-- Cap highlight -->
+    <ellipse cx="110" cy="220" rx="16" ry="22"
+             fill="#f59e0b" opacity="0.55" transform="rotate(-15 110 220)"/>
+    <!-- Gill line at cap underside — nearly flat -->
+    <path d="M 68 279 Q 131 284 196 277"
+          stroke="#92400e" stroke-width="6" fill="none" stroke-linecap="round"/>
+
+    <!-- WATERMELON — lower right, in front of paper -->
+    <!-- Green outer rind -->
+    <path d="M 252 374 Q 314 314 380 360 L 314 436 Z"
+          fill="#4ade80" stroke="#1c1814" stroke-width="11" stroke-linejoin="round"/>
+    <!-- White inner rind -->
+    <path d="M 261 373 Q 314 322 372 362 L 310 432 Z"
+          fill="#f0fdf4"/>
+    <!-- Pink flesh -->
+    <path d="M 270 372 Q 314 330 364 364 L 306 428 Z"
+          fill="#f87171"/>
+    <!-- Seeds -->
+    <ellipse cx="308" cy="380" rx="5" ry="7" fill="#1c1814"
+             transform="rotate(-22 308 380)"/>
+    <ellipse cx="332" cy="370" rx="5" ry="7" fill="#1c1814"
+             transform="rotate(9 332 370)"/>
+    <ellipse cx="320" cy="394" rx="4" ry="6" fill="#1c1814"
+             transform="rotate(-8 320 394)"/>
+
+  </g>
+</svg>
