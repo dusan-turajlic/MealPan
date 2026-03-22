@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Open [http://localhost:3000/meals/plans/8e3f1a7c-4b2d-4f9a-bc0e-5d6a2f8c1b3e](http://localhost:3000/meals/plans/8e3f1a7c-4b2d-4f9a-bc0e-5d6a2f8c1b3e) to view the demo plan.
+Open [http://localhost:3000/meals/plans/1fa292c5-2aad-4fee-b82b-bdcc3e060aa2](http://localhost:3000/meals/plans/1fa292c5-2aad-4fee-b82b-bdcc3e060aa2) to view the demo plan.
 
 ---
 

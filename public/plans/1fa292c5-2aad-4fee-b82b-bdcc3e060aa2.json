@@ -1,51 +1,47 @@
 {
   "version": 1,
-  "description": "Första stegen mot ny rikting",
+  "description": "High-protein diet with low GI – blood sugar control",
   "exact": false,
   "info": [
     {
-      "title": "Att äta ute – håll kursen",
-      "body": "Vid buffé: börja alltid med grönsakerna och fyll upp en bra del av tallriken innan du tar något annat. Gå sedan till proteinet – välj magra alternativ med lite eller ingen sås, eftersom såser ofta innehåller dolt socker. När du har grönsaker och protein kan du lägga till kolhydrater: fokusera på ris, potatis och annat som inte spikar blodsockret. Tänk på liknande portioner som du skulle laga hemma. På restaurang med à la carte: studera menyn och hitta det som passar dina mål bäst. Sallader med protein är alltid ett bra val – be dem att inte lägga till extra sås. Grönsaker är väldigt goda på egen hand."
+      "title": "Regular meals – break the cycle",
+      "body": "If you eat irregularly, blood sugar builds up and crashes – leading to uncontrolled cravings and overeating. Eat 5 times a day with 3–4 hour intervals. Don't skip a meal, even if you're not hungry: it prevents the next bout of binge eating."
     },
     {
-      "title": "Regelbundna måltider – bryt cirkeln",
-      "body": "Äter du oregelbundet hopas blodsockret upp och rasar – vilket leder till okontrollerat sug och överdrivet ätande. Ät 5 gånger per dag med 3–4 timmars mellanrum. Skippa inte en måltid, även om du inte är hungrig: det förebygger nästa attack av hetsätning."
+      "title": "Protein keeps you full",
+      "body": "Aim for 25–30 grams of protein per meal. Cottage cheese, Greek yogurt, eggs and chicken breast are cheap, readily available sources in Finnish grocery stores. Adequate protein suppresses sweet cravings and keeps blood sugar more stable throughout the day."
     },
     {
-      "title": "Protein håller dig mätt",
-      "body": "Sikta på 25–30 gram protein per måltid. Keso, grekisk yoghurt, ägg och kycklingfilé är billiga, lättillgängliga källor i finska matbutiker. Tillräckligt med protein dämpar sötsug och håller blodsockret stabilare hela dagen."
+      "title": "Low GI – insulin resistance under control",
+      "body": "In insulin resistance, the body responds poorly to carbohydrates. Choose only foods with a low glycemic index: oats (GI ≈55), sweet potato (GI ≈44), red lentils (GI ≈29), berries (GI ≈25–40) and crispbread (GI ≈50). Avoid white rice, white bread, white pasta and sugary foods."
     },
     {
-      "title": "Lågt GI – insulinresistens under kontroll",
-      "body": "Vid insulinresistens reagerar kroppen dåligt på kolhydrater. Välj enbart livsmedel med lågt glykemiskt index: havregryn (GI ≈55), sötpotatis (GI ≈44), röda linser (GI ≈29), bär (GI ≈25–40) och knäckebröd (GI ≈50). Undvik vitt ris, vitt bröd, vit pasta och sockerhaltiga livsmedel."
+      "title": "Fiber and vegetables – eat them first",
+      "body": "Start every lunch and dinner with broccoli, cucumber, tomato or salad. Fiber slows glucose absorption and significantly smooths out the insulin response. A handful of vegetables before the rest of the meal is enough."
     },
     {
-      "title": "Börja alltid med grönsakerna",
-      "body": "Gör det till en vana att alltid börja varje måltid med grönsakerna – oavsett om det är broccoli, gurka, tomat, sallad eller något annat. Ordningen du äter maten i spelar en stor roll för hur kroppen reagerar. När du äter grönsaker först täcker fibern tarmslemhinnan och skapar en slags barriär som bromsar hur snabbt glukos tas upp i blodet när kolhydraterna sedan kommer. Det innebär att blodsockret stiger långsammare och jämnare istället för att skjuta i höjden. Ett lägre och jämnare blodsockersvaret kräver i sin tur mindre insulin från bukspottkörteln. Över tid minskar det belastningen på insulinsystemet och hjälper kroppen att bli mer känslig för insulin igen – vilket är kärnan i att hantera insulinresistens. Även en liten mängd grönsaker innan resten av maten räcker för att ge denna effekt."
-    },
-    {
-      "title": "Smarta mellanmål",
-      "body": "Ha alltid ett proteinhaltigt mellanmål redo: keso, grekisk yoghurt eller ett kokt ägg. När hungern slår till – ät mellanmålet. Hoppa inte över det. Ett kontrollerat mellanmål förhindrar att du äter för mycket vid nästa måltid."
+      "title": "Smart snacks",
+      "body": "Always have a high-protein snack ready: cottage cheese, Greek yogurt or a boiled egg. When hunger strikes – eat the snack. Don't skip it. A controlled snack prevents you from overeating at the next meal."
     }
   ],
   "profiles": [
     {
       "id": "vardagar",
-      "label": "Vardagar",
+      "label": "Weekdays",
       "days": [1, 2, 3, 4, 5],
       "meals": [
         {
           "id": "frukost",
-          "label": "Frukost",
+          "label": "Breakfast",
           "options": [
             {
               "id": "havregrynsgrot",
-              "label": "Havregrynsgröt med keso & blåbär",
+              "label": "Oatmeal porridge with cottage cheese & blueberries",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489944102",
-                    "name": "Lidl havregryn",
+                    "name": "Lidl oats",
                     "category": "carb",
                     "gPerDl": 40,
                     "nutritionSource": "openfoodfacts"
@@ -56,7 +52,7 @@
                 {
                   "source": {
                     "barcode": "7394376616037",
-                    "name": "Oatly havredryck",
+                    "name": "Oatly oat drink",
                     "category": "mixed",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -66,7 +62,7 @@
                 {
                   "source": {
                     "barcode": "20886875",
-                    "name": "Milbona keso (fettfri)",
+                    "name": "Milbona cottage cheese (fat-free)",
                     "category": "protein",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -77,7 +73,7 @@
                 {
                   "source": {
                     "barcode": "6410405086716",
-                    "name": "Pirkka frysta blåbär",
+                    "name": "Pirkka frozen blueberries",
                     "category": "carb",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -89,23 +85,23 @@
             },
             {
               "id": "aggröra-knackebrod",
-              "label": "Äggröra & knäckebröd",
+              "label": "Scrambled eggs & crispbread",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "6430029764449",
-                    "name": "Kieku frilandsägg L",
+                    "name": "Kieku free-range eggs L",
                     "category": "protein",
                     "packageSizeG": 64,
                     "nutritionSource": "openfoodfacts"
                   },
                   "amount": 2,
-                  "unit": "kpl"
+                  "unit": "pcs"
                 },
                 {
                   "source": {
                     "barcode": "20886875",
-                    "name": "Milbona keso (fettfri)",
+                    "name": "Milbona cottage cheese (fat-free)",
                     "category": "protein",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -115,14 +111,14 @@
                 },
                 {
                   "source": {
-                    "barcode": "7340191112179",
-                    "name": "Sesamknäckebröd",
+                    "barcode": "6410500095668",
+                    "name": "Finn Crisp Original crispbread",
                     "category": "carb",
-                    "packageSizeG": 14,
+                    "packageSizeG": 250,
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 2,
-                  "unit": "kpl"
+                  "amount": 31,
+                  "unit": "g"
                 }
               ]
             }
@@ -130,33 +126,33 @@
         },
         {
           "id": "formiddagsmellanmal",
-          "label": "Förmiddagsmellanmål",
+          "label": "Morning snack",
           "options": [
             {
               "id": "proteinpudding-choklad",
-              "label": "Proteinpudding choklad",
+              "label": "Protein pudding chocolate",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489216162",
-                    "name": "Milbona proteinpudding choklad",
+                    "name": "Milbona protein pudding chocolate",
                     "category": "protein",
                     "packageSizeG": 152,
                     "nutritionSource": "openfoodfacts"
                   },
                   "amount": 1,
-                  "unit": "kpl"
+                  "unit": "pcs"
                 }
               ]
             },
             {
               "id": "skyr-blåbär",
-              "label": "Skyr & blåbär",
+              "label": "Skyr & blueberries",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489118213",
-                    "name": "Milbona skyr blåbär",
+                    "name": "Milbona skyr blueberry",
                     "category": "protein",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -167,7 +163,7 @@
                 {
                   "source": {
                     "barcode": "6410405086716",
-                    "name": "Pirkka frysta blåbär",
+                    "name": "Pirkka frozen blueberries",
                     "category": "carb",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -179,12 +175,12 @@
             },
             {
               "id": "skyr-jordgubbar",
-              "label": "Skyr & jordgubbar",
+              "label": "Skyr & strawberries",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491224",
-                    "name": "Milbona skyr jordgubbe",
+                    "name": "Milbona skyr strawberry",
                     "category": "protein",
                     "packageSizeG": 450,
                     "nutritionSource": "openfoodfacts"
@@ -195,7 +191,7 @@
                 {
                   "source": {
                     "barcode": "447",
-                    "name": "Mansikka (färsk)",
+                    "name": "Strawberry (fresh)",
                     "category": "carb",
                     "nutritionSource": "fineli"
                   },
@@ -206,12 +202,12 @@
             },
             {
               "id": "skyr-hallon",
-              "label": "Skyr & hallon",
+              "label": "Skyr & raspberries",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491231",
-                    "name": "Milbona skyr hallon",
+                    "name": "Milbona skyr raspberry",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -221,7 +217,7 @@
                 {
                   "source": {
                     "barcode": "6410405181091",
-                    "name": "Pirkka suomalainen vadelma",
+                    "name": "Pirkka Finnish raspberry",
                     "category": "carb",
                     "packageSizeG": 175,
                     "nutritionSource": "openfoodfacts"
@@ -233,12 +229,12 @@
             },
             {
               "id": "skyr-jordgubbe-flavor",
-              "label": "Milbona skyr jordgubbe",
+              "label": "Milbona skyr strawberry",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491224",
-                    "name": "Milbona skyr jordgubbe",
+                    "name": "Milbona skyr strawberry",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts",
                     "packageSizeG": 450
@@ -250,12 +246,12 @@
             },
             {
               "id": "skyr-hallon-flavor",
-              "label": "Milbona skyr hallon",
+              "label": "Milbona skyr raspberry",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491231",
-                    "name": "Milbona skyr hallon",
+                    "name": "Milbona skyr raspberry",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -266,12 +262,12 @@
             },
             {
               "id": "skyr-blabar-flavor",
-              "label": "Milbona skyr blåbär",
+              "label": "Milbona skyr blueberry",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489118213",
-                    "name": "Milbona skyr blåbär",
+                    "name": "Milbona skyr blueberry",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts",
                     "packageSizeG": 500
@@ -283,12 +279,12 @@
             },
             {
               "id": "skyr-vanilj",
-              "label": "Milbona skyr vanilj",
+              "label": "Milbona skyr vanilla",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491248",
-                    "name": "Milbona skyr vanilj",
+                    "name": "Milbona skyr vanilla",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts",
                     "packageSizeG": 450
@@ -300,23 +296,23 @@
             },
             {
               "id": "agg-fetaost",
-              "label": "Kokta ägg & fetaost",
+              "label": "Boiled eggs & feta cheese",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "6430029764449",
-                    "name": "Kieku frilandsägg L",
+                    "name": "Kieku free-range eggs L",
                     "category": "protein",
                     "packageSizeG": 64,
                     "nutritionSource": "openfoodfacts"
                   },
                   "amount": 2,
-                  "unit": "kpl"
+                  "unit": "pcs"
                 },
                 {
                   "source": {
                     "barcode": "6416710300875",
-                    "name": "Filos fetaost",
+                    "name": "Filos feta cheese",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -327,12 +323,12 @@
             },
             {
               "id": "keso-gurka",
-              "label": "Keso med gurka",
+              "label": "Cottage cheese with cucumber",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "20886875",
-                    "name": "Milbona keso (fettfri)",
+                    "name": "Milbona cottage cheese (fat-free)",
                     "category": "protein",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -343,7 +339,7 @@
                 {
                   "source": {
                     "barcode": "346",
-                    "name": "Gurka",
+                    "name": "Cucumber",
                     "category": "mixed",
                     "nutritionSource": "fineli"
                   },
@@ -354,18 +350,18 @@
             },
             {
               "id": "kokta-agg",
-              "label": "Kokta ägg",
+              "label": "Boiled eggs",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "6430029764449",
-                    "name": "Kieku frilandsägg L",
+                    "name": "Kieku free-range eggs L",
                     "category": "protein",
                     "packageSizeG": 64,
                     "nutritionSource": "openfoodfacts"
                   },
                   "amount": 2,
-                  "unit": "kpl"
+                  "unit": "pcs"
                 }
               ]
             },
@@ -376,7 +372,7 @@
                 {
                   "source": {
                     "barcode": "4056489944102",
-                    "name": "Lidl havregryn",
+                    "name": "Lidl oats",
                     "category": "carb",
                     "gPerDl": 40,
                     "nutritionSource": "openfoodfacts"
@@ -387,7 +383,7 @@
                 {
                   "source": {
                     "barcode": "4056489491217",
-                    "name": "Milbona skyr naturell",
+                    "name": "Milbona skyr natural",
                     "category": "protein",
                     "packageSizeG": 450,
                     "gPerDl": 100,
@@ -399,7 +395,7 @@
                 {
                   "source": {
                     "barcode": "6410405086716",
-                    "name": "Pirkka frysta blåbär",
+                    "name": "Pirkka frozen blueberries",
                     "category": "carb",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -417,12 +413,12 @@
           "options": [
             {
               "id": "pikok-kyckling-sotpotatis",
-              "label": "Förkokad kyckling & sötpotatis",
+              "label": "Pre-cooked chicken & sweet potato",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "20287481",
-                    "name": "Förkokad kycklingfilé",
+                    "name": "Pre-cooked chicken breast",
                     "category": "protein",
                     "packageSizeG": 175,
                     "nutritionSource": "openfoodfacts"
@@ -433,18 +429,18 @@
                 {
                   "source": {
                     "barcode": "30223",
-                    "name": "Sötpotatis",
+                    "name": "Sweet potato",
                     "category": "carb",
                     "packageSizeG": 200,
                     "nutritionSource": "fineli"
                   },
                   "amount": 1,
-                  "unit": "kpl"
+                  "unit": "pcs"
                 },
                 {
                   "source": {
                     "barcode": "6410405067555",
-                    "name": "Pirkka fryst broccoli",
+                    "name": "Pirkka frozen broccoli",
                     "category": "mixed",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -455,7 +451,7 @@
                 {
                   "source": {
                     "barcode": "7340191129061",
-                    "name": "Rainbow extra virgin olivolja",
+                    "name": "Rainbow extra virgin olive oil",
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -466,12 +462,12 @@
             },
             {
               "id": "kalkon-linser",
-              "label": "Kalkon & röda linser",
+              "label": "Turkey & red lentils",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "6409100022549",
-                    "name": "Kariniemi kalkonkött",
+                    "name": "Kariniemi turkey meat",
                     "category": "protein",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -482,7 +478,7 @@
                 {
                   "source": {
                     "barcode": "7340191145771",
-                    "name": "Coop röda linser (färdigkokta)",
+                    "name": "Coop red lentils (pre-cooked)",
                     "category": "mixed",
                     "packageSizeG": 230,
                     "nutritionSource": "openfoodfacts"
@@ -493,7 +489,7 @@
                 {
                   "source": {
                     "barcode": "6410402011865",
-                    "name": "Pirkka krossade tomater",
+                    "name": "Pirkka crushed tomatoes",
                     "category": "mixed",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -504,7 +500,7 @@
                 {
                   "source": {
                     "barcode": "6410405067555",
-                    "name": "Pirkka fryst broccoli",
+                    "name": "Pirkka frozen broccoli",
                     "category": "mixed",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -516,12 +512,12 @@
             },
             {
               "id": "kyckling-potatis-fryst-paprika",
-              "label": "Kyckling & potatisar med fryst paprika",
+              "label": "Chicken & potatoes with frozen bell pepper",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "20287481",
-                    "name": "Förkokad kycklingfilé",
+                    "name": "Pre-cooked chicken breast",
                     "category": "protein",
                     "packageSizeG": 175,
                     "nutritionSource": "openfoodfacts"
@@ -532,7 +528,7 @@
                 {
                   "source": {
                     "barcode": "2033",
-                    "name": "Kokta potatisar",
+                    "name": "Boiled potatoes",
                     "category": "carb",
                     "nutritionSource": "fineli"
                   },
@@ -542,7 +538,7 @@
                 {
                   "source": {
                     "barcode": "355",
-                    "name": "Paprika (blandad, fryst)",
+                    "name": "Bell pepper (mixed, frozen)",
                     "category": "mixed",
                     "nutritionSource": "fineli"
                   },
@@ -552,7 +548,7 @@
                 {
                   "source": {
                     "barcode": "7340191129061",
-                    "name": "Rainbow extra virgin olivolja",
+                    "name": "Rainbow extra virgin olive oil",
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -563,12 +559,12 @@
             },
             {
               "id": "kyckling-potatis-farsk-paprika",
-              "label": "Kyckling & potatisar med färsk paprika",
+              "label": "Chicken & potatoes with fresh bell pepper",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "20287481",
-                    "name": "Förkokad kycklingfilé",
+                    "name": "Pre-cooked chicken breast",
                     "category": "protein",
                     "packageSizeG": 175,
                     "nutritionSource": "openfoodfacts"
@@ -579,7 +575,7 @@
                 {
                   "source": {
                     "barcode": "2033",
-                    "name": "Kokta potatisar",
+                    "name": "Boiled potatoes",
                     "category": "carb",
                     "nutritionSource": "fineli"
                   },
@@ -589,7 +585,7 @@
                 {
                   "source": {
                     "barcode": "355",
-                    "name": "Paprika (färsk)",
+                    "name": "Bell pepper (fresh)",
                     "category": "mixed",
                     "nutritionSource": "fineli"
                   },
@@ -599,7 +595,7 @@
                 {
                   "source": {
                     "barcode": "7340191129061",
-                    "name": "Rainbow extra virgin olivolja",
+                    "name": "Rainbow extra virgin olive oil",
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -612,16 +608,16 @@
         },
         {
           "id": "middag",
-          "label": "Middag",
+          "label": "Dinner",
           "options": [
             {
               "id": "kalkonbolognese-pasta",
-              "label": "Kalkonbolognese med fullkornspasta",
+              "label": "Turkey bolognese with whole-grain pasta",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "6409100022549",
-                    "name": "Kariniemi kalkonkött",
+                    "name": "Kariniemi turkey meat",
                     "category": "protein",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -632,7 +628,7 @@
                 {
                   "source": {
                     "barcode": "6411200100256",
-                    "name": "Torino fullkornspasta",
+                    "name": "Torino whole-grain pasta",
                     "category": "carb",
                     "packageSizeG": 500,
                     "gPerDl": 90,
@@ -644,7 +640,7 @@
                 {
                   "source": {
                     "barcode": "6410402011865",
-                    "name": "Pirkka krossade tomater",
+                    "name": "Pirkka crushed tomatoes",
                     "category": "mixed",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -655,7 +651,7 @@
                 {
                   "source": {
                     "barcode": "6410405067555",
-                    "name": "Pirkka fryst broccoli",
+                    "name": "Pirkka frozen broccoli",
                     "category": "mixed",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -666,7 +662,7 @@
                 {
                   "source": {
                     "barcode": "7340191129061",
-                    "name": "Rainbow extra virgin olivolja",
+                    "name": "Rainbow extra virgin olive oil",
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -677,12 +673,12 @@
             },
             {
               "id": "pikok-kyckling-linsgrytan",
-              "label": "Förkokad kyckling & linsgrytan",
+              "label": "Pre-cooked chicken & lentil stew",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "20287481",
-                    "name": "Förkokad kycklingfilé",
+                    "name": "Pre-cooked chicken breast",
                     "category": "protein",
                     "packageSizeG": 175,
                     "nutritionSource": "openfoodfacts"
@@ -693,7 +689,7 @@
                 {
                   "source": {
                     "barcode": "7340191145771",
-                    "name": "Coop röda linser (färdigkokta)",
+                    "name": "Coop red lentils (pre-cooked)",
                     "category": "mixed",
                     "packageSizeG": 230,
                     "nutritionSource": "openfoodfacts"
@@ -704,7 +700,7 @@
                 {
                   "source": {
                     "barcode": "6410402011865",
-                    "name": "Pirkka krossade tomater",
+                    "name": "Pirkka crushed tomatoes",
                     "category": "mixed",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -715,7 +711,7 @@
                 {
                   "source": {
                     "barcode": "6410405067555",
-                    "name": "Pirkka fryst broccoli",
+                    "name": "Pirkka frozen broccoli",
                     "category": "mixed",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -726,7 +722,7 @@
                 {
                   "source": {
                     "barcode": "7340191129061",
-                    "name": "Rainbow extra virgin olivolja",
+                    "name": "Rainbow extra virgin olive oil",
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -737,12 +733,12 @@
             },
             {
               "id": "kalkon-basmatiris",
-              "label": "Kalkon & basmatiris med spenat",
+              "label": "Turkey & basmati rice with spinach",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "6409100022549",
-                    "name": "Kariniemi kalkonkött",
+                    "name": "Kariniemi turkey meat",
                     "category": "protein",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -753,7 +749,7 @@
                 {
                   "source": {
                     "barcode": "30346",
-                    "name": "Basmatiris (kokt)",
+                    "name": "Basmati rice (cooked)",
                     "category": "carb",
                     "nutritionSource": "fineli"
                   },
@@ -763,7 +759,7 @@
                 {
                   "source": {
                     "barcode": "6410402011865",
-                    "name": "Pirkka krossade tomater",
+                    "name": "Pirkka crushed tomatoes",
                     "category": "mixed",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -774,7 +770,7 @@
                 {
                   "source": {
                     "barcode": "34228",
-                    "name": "Spenat (fryst)",
+                    "name": "Spinach (frozen)",
                     "category": "mixed",
                     "nutritionSource": "fineli"
                   },
@@ -784,7 +780,7 @@
                 {
                   "source": {
                     "barcode": "7340191129061",
-                    "name": "Rainbow extra virgin olivolja",
+                    "name": "Rainbow extra virgin olive oil",
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -797,33 +793,33 @@
         },
         {
           "id": "kvallsmal",
-          "label": "Kvällsmål",
+          "label": "Evening snack",
           "options": [
             {
               "id": "proteinpudding-vanilj",
-              "label": "Proteinpudding vanilj",
+              "label": "Protein pudding vanilla",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489216155",
-                    "name": "Milbona proteinpudding vanilj",
+                    "name": "Milbona protein pudding vanilla",
                     "category": "protein",
                     "packageSizeG": 152,
                     "nutritionSource": "openfoodfacts"
                   },
                   "amount": 1,
-                  "unit": "kpl"
+                  "unit": "pcs"
                 }
               ]
             },
             {
               "id": "skyr-blåbär-em",
-              "label": "Skyr & blåbär",
+              "label": "Skyr & blueberries",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489118213",
-                    "name": "Milbona skyr blåbär",
+                    "name": "Milbona skyr blueberry",
                     "category": "protein",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -834,7 +830,7 @@
                 {
                   "source": {
                     "barcode": "6410405086716",
-                    "name": "Pirkka frysta blåbär",
+                    "name": "Pirkka frozen blueberries",
                     "category": "carb",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -846,12 +842,12 @@
             },
             {
               "id": "skyr-jordgubbar-em",
-              "label": "Skyr & jordgubbar",
+              "label": "Skyr & strawberries",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491224",
-                    "name": "Milbona skyr jordgubbe",
+                    "name": "Milbona skyr strawberry",
                     "category": "protein",
                     "packageSizeG": 450,
                     "nutritionSource": "openfoodfacts"
@@ -862,7 +858,7 @@
                 {
                   "source": {
                     "barcode": "447",
-                    "name": "Mansikka (färsk)",
+                    "name": "Strawberry (fresh)",
                     "category": "carb",
                     "nutritionSource": "fineli"
                   },
@@ -873,12 +869,12 @@
             },
             {
               "id": "skyr-hallon-em",
-              "label": "Skyr & hallon",
+              "label": "Skyr & raspberries",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491231",
-                    "name": "Milbona skyr hallon",
+                    "name": "Milbona skyr raspberry",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -888,7 +884,7 @@
                 {
                   "source": {
                     "barcode": "6410405181091",
-                    "name": "Pirkka suomalainen vadelma",
+                    "name": "Pirkka Finnish raspberry",
                     "category": "carb",
                     "packageSizeG": 175,
                     "nutritionSource": "openfoodfacts"
@@ -900,12 +896,12 @@
             },
             {
               "id": "skyr-jordgubbe-flavor-em",
-              "label": "Milbona skyr jordgubbe",
+              "label": "Milbona skyr strawberry",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491224",
-                    "name": "Milbona skyr jordgubbe",
+                    "name": "Milbona skyr strawberry",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts",
                     "packageSizeG": 450
@@ -917,12 +913,12 @@
             },
             {
               "id": "skyr-hallon-flavor-em",
-              "label": "Milbona skyr hallon",
+              "label": "Milbona skyr raspberry",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491231",
-                    "name": "Milbona skyr hallon",
+                    "name": "Milbona skyr raspberry",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -933,12 +929,12 @@
             },
             {
               "id": "skyr-blabar-flavor-em",
-              "label": "Milbona skyr blåbär",
+              "label": "Milbona skyr blueberry",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489118213",
-                    "name": "Milbona skyr blåbär",
+                    "name": "Milbona skyr blueberry",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts",
                     "packageSizeG": 500
@@ -950,12 +946,12 @@
             },
             {
               "id": "skyr-vanilj-em",
-              "label": "Milbona skyr vanilj",
+              "label": "Milbona skyr vanilla",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491248",
-                    "name": "Milbona skyr vanilj",
+                    "name": "Milbona skyr vanilla",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts",
                     "packageSizeG": 450
@@ -967,23 +963,23 @@
             },
             {
               "id": "knackebrod-keso",
-              "label": "Knäckebröd & keso",
+              "label": "Crispbread & cottage cheese",
               "ingredients": [
                 {
                   "source": {
-                    "barcode": "7340191112179",
-                    "name": "Sesamknäckebröd",
+                    "barcode": "6410500095668",
+                    "name": "Finn Crisp Original crispbread",
                     "category": "carb",
-                    "packageSizeG": 14,
+                    "packageSizeG": 250,
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 4,
-                  "unit": "kpl"
+                  "amount": 50,
+                  "unit": "g"
                 },
                 {
                   "source": {
                     "barcode": "20886875",
-                    "name": "Milbona keso (fettfri)",
+                    "name": "Milbona cottage cheese (fat-free)",
                     "category": "protein",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -999,7 +995,7 @@
     },
     {
       "id": "veckoslut",
-      "label": "Veckoslut",
+      "label": "Weekend",
       "days": [0, 6],
       "meals": [
         {
@@ -1008,12 +1004,12 @@
           "options": [
             {
               "id": "proteinpannkakor",
-              "label": "Proteinpannkakor med blåbär",
+              "label": "Protein pancakes with blueberries",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489944102",
-                    "name": "Lidl havregryn",
+                    "name": "Lidl oats",
                     "category": "carb",
                     "gPerDl": 40,
                     "nutritionSource": "openfoodfacts"
@@ -1024,7 +1020,7 @@
                 {
                   "source": {
                     "barcode": "7394376616037",
-                    "name": "Oatly havredryck",
+                    "name": "Oatly oat drink",
                     "category": "mixed",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -1034,18 +1030,18 @@
                 {
                   "source": {
                     "barcode": "6430029764449",
-                    "name": "Kieku frilandsägg L",
+                    "name": "Kieku free-range eggs L",
                     "category": "protein",
                     "packageSizeG": 64,
                     "nutritionSource": "openfoodfacts"
                   },
                   "amount": 2,
-                  "unit": "kpl"
+                  "unit": "pcs"
                 },
                 {
                   "source": {
                     "barcode": "20886875",
-                    "name": "Milbona keso (fettfri)",
+                    "name": "Milbona cottage cheese (fat-free)",
                     "category": "protein",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -1056,7 +1052,7 @@
                 {
                   "source": {
                     "barcode": "6410405086716",
-                    "name": "Pirkka frysta blåbär",
+                    "name": "Pirkka frozen blueberries",
                     "category": "carb",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -1068,34 +1064,34 @@
             },
             {
               "id": "aggröra-knackebrod-yoghurt",
-              "label": "Äggröra med knäckebröd & yoghurt",
+              "label": "Scrambled eggs with crispbread & yogurt",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "6430029764449",
-                    "name": "Kieku frilandsägg L",
+                    "name": "Kieku free-range eggs L",
                     "category": "protein",
                     "packageSizeG": 64,
                     "nutritionSource": "openfoodfacts"
                   },
                   "amount": 3,
-                  "unit": "kpl"
+                  "unit": "pcs"
                 },
                 {
                   "source": {
-                    "barcode": "7340191112179",
-                    "name": "Sesamknäckebröd",
+                    "barcode": "6410500095668",
+                    "name": "Finn Crisp Original crispbread",
                     "category": "carb",
-                    "packageSizeG": 14,
+                    "packageSizeG": 250,
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 4,
-                  "unit": "kpl"
+                  "amount": 50,
+                  "unit": "g"
                 },
                 {
                   "source": {
                     "barcode": "6408430407545",
-                    "name": "Valio A+ grekisk yoghurt",
+                    "name": "Valio A+ Greek yogurt",
                     "category": "protein",
                     "packageSizeG": 1000,
                     "gPerDl": 100,
@@ -1110,33 +1106,33 @@
         },
         {
           "id": "mellanmal",
-          "label": "Mellanmål",
+          "label": "Snack",
           "options": [
             {
               "id": "proteinpudding-choklad-vs",
-              "label": "Proteinpudding choklad",
+              "label": "Protein pudding chocolate",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489216162",
-                    "name": "Milbona proteinpudding choklad",
+                    "name": "Milbona protein pudding chocolate",
                     "category": "protein",
                     "packageSizeG": 152,
                     "nutritionSource": "openfoodfacts"
                   },
                   "amount": 1,
-                  "unit": "kpl"
+                  "unit": "pcs"
                 }
               ]
             },
             {
               "id": "skyr-blåbär-vs",
-              "label": "Skyr & blåbär",
+              "label": "Skyr & blueberries",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489118213",
-                    "name": "Milbona skyr blåbär",
+                    "name": "Milbona skyr blueberry",
                     "category": "protein",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -1147,7 +1143,7 @@
                 {
                   "source": {
                     "barcode": "6410405086716",
-                    "name": "Pirkka frysta blåbär",
+                    "name": "Pirkka frozen blueberries",
                     "category": "carb",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -1159,12 +1155,12 @@
             },
             {
               "id": "skyr-jordgubbar-vs",
-              "label": "Skyr & jordgubbar",
+              "label": "Skyr & strawberries",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491224",
-                    "name": "Milbona skyr jordgubbe",
+                    "name": "Milbona skyr strawberry",
                     "category": "protein",
                     "packageSizeG": 450,
                     "nutritionSource": "openfoodfacts"
@@ -1175,7 +1171,7 @@
                 {
                   "source": {
                     "barcode": "447",
-                    "name": "Mansikka (färsk)",
+                    "name": "Strawberry (fresh)",
                     "category": "carb",
                     "nutritionSource": "fineli"
                   },
@@ -1186,12 +1182,12 @@
             },
             {
               "id": "skyr-hallon-vs",
-              "label": "Skyr & hallon",
+              "label": "Skyr & raspberries",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491231",
-                    "name": "Milbona skyr hallon",
+                    "name": "Milbona skyr raspberry",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -1201,7 +1197,7 @@
                 {
                   "source": {
                     "barcode": "6410405181091",
-                    "name": "Pirkka suomalainen vadelma",
+                    "name": "Pirkka Finnish raspberry",
                     "category": "carb",
                     "packageSizeG": 175,
                     "nutritionSource": "openfoodfacts"
@@ -1213,12 +1209,12 @@
             },
             {
               "id": "skyr-jordgubbe-flavor-vs",
-              "label": "Milbona skyr jordgubbe",
+              "label": "Milbona skyr strawberry",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491224",
-                    "name": "Milbona skyr jordgubbe",
+                    "name": "Milbona skyr strawberry",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts",
                     "packageSizeG": 450
@@ -1230,12 +1226,12 @@
             },
             {
               "id": "skyr-hallon-flavor-vs",
-              "label": "Milbona skyr hallon",
+              "label": "Milbona skyr raspberry",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491231",
-                    "name": "Milbona skyr hallon",
+                    "name": "Milbona skyr raspberry",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -1246,12 +1242,12 @@
             },
             {
               "id": "skyr-blabar-flavor-vs",
-              "label": "Milbona skyr blåbär",
+              "label": "Milbona skyr blueberry",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489118213",
-                    "name": "Milbona skyr blåbär",
+                    "name": "Milbona skyr blueberry",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts",
                     "packageSizeG": 500
@@ -1263,12 +1259,12 @@
             },
             {
               "id": "skyr-vanilj-vs",
-              "label": "Milbona skyr vanilj",
+              "label": "Milbona skyr vanilla",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "4056489491248",
-                    "name": "Milbona skyr vanilj",
+                    "name": "Milbona skyr vanilla",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts",
                     "packageSizeG": 450
@@ -1280,23 +1276,23 @@
             },
             {
               "id": "agg-fetaost-vs",
-              "label": "Kokta ägg & fetaost",
+              "label": "Boiled eggs & feta cheese",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "6430029764449",
-                    "name": "Kieku frilandsägg L",
+                    "name": "Kieku free-range eggs L",
                     "category": "protein",
                     "packageSizeG": 64,
                     "nutritionSource": "openfoodfacts"
                   },
                   "amount": 2,
-                  "unit": "kpl"
+                  "unit": "pcs"
                 },
                 {
                   "source": {
                     "barcode": "6416710300875",
-                    "name": "Filos fetaost",
+                    "name": "Filos feta cheese",
                     "category": "protein",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -1307,12 +1303,12 @@
             },
             {
               "id": "keso-gurka-vs",
-              "label": "Keso med gurka",
+              "label": "Cottage cheese with cucumber",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "20886875",
-                    "name": "Milbona keso (fettfri)",
+                    "name": "Milbona cottage cheese (fat-free)",
                     "category": "protein",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -1323,7 +1319,7 @@
                 {
                   "source": {
                     "barcode": "346",
-                    "name": "Gurka",
+                    "name": "Cucumber",
                     "category": "mixed",
                     "nutritionSource": "fineli"
                   },
@@ -1336,16 +1332,16 @@
         },
         {
           "id": "middag",
-          "label": "Middag",
+          "label": "Dinner",
           "options": [
             {
               "id": "pikok-kyckling-sotpotatis-vs",
-              "label": "Förkokad kyckling & sötpotatis",
+              "label": "Pre-cooked chicken & sweet potato",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "20287481",
-                    "name": "Förkokad kycklingfilé",
+                    "name": "Pre-cooked chicken breast",
                     "category": "protein",
                     "packageSizeG": 175,
                     "nutritionSource": "openfoodfacts"
@@ -1356,18 +1352,18 @@
                 {
                   "source": {
                     "barcode": "30223",
-                    "name": "Sötpotatis",
+                    "name": "Sweet potato",
                     "category": "carb",
                     "packageSizeG": 200,
                     "nutritionSource": "fineli"
                   },
                   "amount": 1,
-                  "unit": "kpl"
+                  "unit": "pcs"
                 },
                 {
                   "source": {
                     "barcode": "6410405067555",
-                    "name": "Pirkka fryst broccoli",
+                    "name": "Pirkka frozen broccoli",
                     "category": "mixed",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -1378,7 +1374,7 @@
                 {
                   "source": {
                     "barcode": "7340191129061",
-                    "name": "Rainbow extra virgin olivolja",
+                    "name": "Rainbow extra virgin olive oil",
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -1389,12 +1385,12 @@
             },
             {
               "id": "kalkon-linsgrytan-vs",
-              "label": "Kalkon & linsgrytan",
+              "label": "Turkey & lentil stew",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "6409100022549",
-                    "name": "Kariniemi kalkonkött",
+                    "name": "Kariniemi turkey meat",
                     "category": "protein",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -1405,7 +1401,7 @@
                 {
                   "source": {
                     "barcode": "7340191145771",
-                    "name": "Coop röda linser (färdigkokta)",
+                    "name": "Coop red lentils (pre-cooked)",
                     "category": "mixed",
                     "packageSizeG": 230,
                     "nutritionSource": "openfoodfacts"
@@ -1416,7 +1412,7 @@
                 {
                   "source": {
                     "barcode": "6410402011865",
-                    "name": "Pirkka krossade tomater",
+                    "name": "Pirkka crushed tomatoes",
                     "category": "mixed",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -1427,7 +1423,7 @@
                 {
                   "source": {
                     "barcode": "6410405067555",
-                    "name": "Pirkka fryst broccoli",
+                    "name": "Pirkka frozen broccoli",
                     "category": "mixed",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -1438,7 +1434,7 @@
                 {
                   "source": {
                     "barcode": "7340191129061",
-                    "name": "Rainbow extra virgin olivolja",
+                    "name": "Rainbow extra virgin olive oil",
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -1449,12 +1445,12 @@
             },
             {
               "id": "kyckling-potatis-fryst-paprika-vs",
-              "label": "Kyckling & potatisar med fryst paprika",
+              "label": "Chicken & potatoes with frozen bell pepper",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "20287481",
-                    "name": "Förkokad kycklingfilé",
+                    "name": "Pre-cooked chicken breast",
                     "category": "protein",
                     "packageSizeG": 175,
                     "nutritionSource": "openfoodfacts"
@@ -1465,7 +1461,7 @@
                 {
                   "source": {
                     "barcode": "2033",
-                    "name": "Kokta potatisar",
+                    "name": "Boiled potatoes",
                     "category": "carb",
                     "nutritionSource": "fineli"
                   },
@@ -1475,7 +1471,7 @@
                 {
                   "source": {
                     "barcode": "355",
-                    "name": "Paprika (blandad, fryst)",
+                    "name": "Bell pepper (mixed, frozen)",
                     "category": "mixed",
                     "nutritionSource": "fineli"
                   },
@@ -1485,7 +1481,7 @@
                 {
                   "source": {
                     "barcode": "7340191129061",
-                    "name": "Rainbow extra virgin olivolja",
+                    "name": "Rainbow extra virgin olive oil",
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -1496,12 +1492,12 @@
             },
             {
               "id": "kyckling-potatis-farsk-paprika-vs",
-              "label": "Kyckling & potatisar med färsk paprika",
+              "label": "Chicken & potatoes with fresh bell pepper",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "20287481",
-                    "name": "Förkokad kycklingfilé",
+                    "name": "Pre-cooked chicken breast",
                     "category": "protein",
                     "packageSizeG": 175,
                     "nutritionSource": "openfoodfacts"
@@ -1512,7 +1508,7 @@
                 {
                   "source": {
                     "barcode": "2033",
-                    "name": "Kokta potatisar",
+                    "name": "Boiled potatoes",
                     "category": "carb",
                     "nutritionSource": "fineli"
                   },
@@ -1522,7 +1518,7 @@
                 {
                   "source": {
                     "barcode": "355",
-                    "name": "Paprika (färsk)",
+                    "name": "Bell pepper (fresh)",
                     "category": "mixed",
                     "nutritionSource": "fineli"
                   },
@@ -1532,7 +1528,7 @@
                 {
                   "source": {
                     "barcode": "7340191129061",
-                    "name": "Rainbow extra virgin olivolja",
+                    "name": "Rainbow extra virgin olive oil",
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
@@ -1543,12 +1539,12 @@
             },
             {
               "id": "kalkon-basmatiris-vs",
-              "label": "Kalkon & basmatiris med spenat",
+              "label": "Turkey & basmati rice with spinach",
               "ingredients": [
                 {
                   "source": {
                     "barcode": "6409100022549",
-                    "name": "Kariniemi kalkonkött",
+                    "name": "Kariniemi turkey meat",
                     "category": "protein",
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
@@ -1559,7 +1555,7 @@
                 {
                   "source": {
                     "barcode": "30346",
-                    "name": "Basmatiris (kokt)",
+                    "name": "Basmati rice (cooked)",
                     "category": "carb",
                     "nutritionSource": "fineli"
                   },
@@ -1569,7 +1565,7 @@
                 {
                   "source": {
                     "barcode": "6410402011865",
-                    "name": "Pirkka krossade tomater",
+                    "name": "Pirkka crushed tomatoes",
                     "category": "mixed",
                     "packageSizeG": 500,
                     "nutritionSource": "openfoodfacts"
@@ -1580,7 +1576,7 @@
                 {
                   "source": {
                     "barcode": "34228",
-                    "name": "Spenat (fryst)",
+                    "name": "Spinach (frozen)",
                     "category": "mixed",
                     "nutritionSource": "fineli"
                   },
@@ -1590,7 +1586,7 @@
                 {
                   "source": {
                     "barcode": "7340191129061",
-                    "name": "Rainbow extra virgin olivolja",
+                    "name": "Rainbow extra virgin olive oil",
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },

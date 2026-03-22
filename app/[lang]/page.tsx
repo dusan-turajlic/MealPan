@@ -22,7 +22,7 @@ export default async function Home({
       <h1 className="text-3xl font-bold text-ink">{t.homeHeading}</h1>
       <p className="text-dim text-center max-w-sm">{t.homeDescription}</p>
       <Link
-        href={`/${lang}/meals/plans/8e3f1a7c-4b2d-4f9a-bc0e-5d6a2f8c1b3e`}
+        href={`/${lang}/meals/plans/1fa292c5-2aad-4fee-b82b-bdcc3e060aa2`}
         className="rounded-xl bg-accent px-6 py-3 font-semibold text-on-accent hover:bg-accent/90 transition-colors"
       >
         {t.openDemoPlan}
