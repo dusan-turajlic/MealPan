@@ -76,7 +76,8 @@
                     "name": "Pirkka frozen blueberries",
                     "category": "carb",
                     "packageSizeG": 400,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
                   },
                   "amount": 50,
                   "unit": "g"
@@ -93,7 +94,8 @@
                     "name": "Kieku free-range eggs L",
                     "category": "protein",
                     "packageSizeG": 64,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
                   },
                   "amount": 2,
                   "unit": "pcs"
@@ -166,7 +168,8 @@
                     "name": "Pirkka frozen blueberries",
                     "category": "carb",
                     "packageSizeG": 400,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
                   },
                   "amount": 50,
                   "unit": "g"
@@ -304,7 +307,8 @@
                     "name": "Kieku free-range eggs L",
                     "category": "protein",
                     "packageSizeG": 64,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
                   },
                   "amount": 2,
                   "unit": "pcs"
@@ -358,7 +362,8 @@
                     "name": "Kieku free-range eggs L",
                     "category": "protein",
                     "packageSizeG": 64,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
                   },
                   "amount": 2,
                   "unit": "pcs"
@@ -398,7 +403,8 @@
                     "name": "Pirkka frozen blueberries",
                     "category": "carb",
                     "packageSizeG": 400,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
                   },
                   "amount": 50,
                   "unit": "g"
@@ -432,7 +438,8 @@
                     "name": "Sweet potato",
                     "category": "carb",
                     "packageSizeG": 200,
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "fallbackEmoji": "🍠"
                   },
                   "amount": 1,
                   "unit": "pcs"
@@ -833,7 +840,8 @@
                     "name": "Pirkka frozen blueberries",
                     "category": "carb",
                     "packageSizeG": 400,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
                   },
                   "amount": 50,
                   "unit": "g"
@@ -1033,7 +1041,8 @@
                     "name": "Kieku free-range eggs L",
                     "category": "protein",
                     "packageSizeG": 64,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
                   },
                   "amount": 2,
                   "unit": "pcs"
@@ -1055,7 +1064,8 @@
                     "name": "Pirkka frozen blueberries",
                     "category": "carb",
                     "packageSizeG": 400,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
                   },
                   "amount": 50,
                   "unit": "g"
@@ -1072,7 +1082,8 @@
                     "name": "Kieku free-range eggs L",
                     "category": "protein",
                     "packageSizeG": 64,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
                   },
                   "amount": 3,
                   "unit": "pcs"
@@ -1146,7 +1157,8 @@
                     "name": "Pirkka frozen blueberries",
                     "category": "carb",
                     "packageSizeG": 400,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
                   },
                   "amount": 50,
                   "unit": "g"
@@ -1284,7 +1296,8 @@
                     "name": "Kieku free-range eggs L",
                     "category": "protein",
                     "packageSizeG": 64,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
                   },
                   "amount": 2,
                   "unit": "pcs"
@@ -1355,7 +1368,8 @@
                     "name": "Sweet potato",
                     "category": "carb",
                     "packageSizeG": 200,
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "fallbackEmoji": "🍠"
                   },
                   "amount": 1,
                   "unit": "pcs"

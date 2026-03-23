@@ -86,7 +86,8 @@
                     "name": "Pirkka frysta blåbär",
                     "category": "carb",
                     "packageSizeG": 400,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
                   },
                   "amount": 30,
                   "unit": "g"
@@ -97,7 +98,8 @@
                     "name": "Valnöt",
                     "category": "fat",
                     "nutritionSource": "fineli",
-                    "packageSizeG": 7
+                    "packageSizeG": 7,
+                    "fallbackEmoji": "🧠"
                   },
                   "amount": 2,
                   "unit": "kpl"
@@ -114,7 +116,8 @@
                     "name": "Kieku frilandsägg L",
                     "category": "protein",
                     "packageSizeG": 64,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
                   },
                   "amount": 2,
                   "unit": "kpl"
@@ -187,7 +190,8 @@
                     "name": "Pirkka frysta blåbär",
                     "category": "carb",
                     "packageSizeG": 400,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
                   },
                   "amount": 50,
                   "unit": "g"
@@ -328,7 +332,8 @@
                     "name": "Kieku frilandsägg L",
                     "category": "protein",
                     "packageSizeG": 64,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
                   },
                   "amount": 2,
                   "unit": "kpl"
@@ -383,7 +388,8 @@
                     "name": "Kieku frilandsägg L",
                     "category": "protein",
                     "packageSizeG": 64,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
                   },
                   "amount": 2,
                   "unit": "kpl"
@@ -423,7 +429,8 @@
                     "name": "Pirkka frysta blåbär",
                     "category": "carb",
                     "packageSizeG": 400,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
                   },
                   "amount": 30,
                   "unit": "g"
@@ -533,7 +540,8 @@
                     "name": "Sötpotatis",
                     "category": "carb",
                     "packageSizeG": 200,
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "fallbackEmoji": "🍠"
                   },
                   "amount": 100,
                   "unit": "g"
@@ -950,7 +958,8 @@
                     "name": "Pirkka frysta blåbär",
                     "category": "carb",
                     "packageSizeG": 400,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
                   },
                   "amount": 50,
                   "unit": "g"
@@ -1222,7 +1231,8 @@
                     "name": "Kieku frilandsägg L",
                     "category": "protein",
                     "packageSizeG": 64,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
                   },
                   "amount": 2,
                   "unit": "kpl"
@@ -1244,7 +1254,8 @@
                     "name": "Pirkka frysta blåbär",
                     "category": "carb",
                     "packageSizeG": 400,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
                   },
                   "amount": 30,
                   "unit": "g"
@@ -1255,7 +1266,8 @@
                     "name": "Valnöt",
                     "category": "fat",
                     "nutritionSource": "fineli",
-                    "packageSizeG": 7
+                    "packageSizeG": 7,
+                    "fallbackEmoji": "🧠"
                   },
                   "amount": 2,
                   "unit": "kpl"
@@ -1272,7 +1284,8 @@
                     "name": "Kieku frilandsägg L",
                     "category": "protein",
                     "packageSizeG": 64,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
                   },
                   "amount": 3,
                   "unit": "kpl"
@@ -1357,7 +1370,8 @@
                     "name": "Pirkka frysta blåbär",
                     "category": "carb",
                     "packageSizeG": 400,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
                   },
                   "amount": 50,
                   "unit": "g"
@@ -1498,7 +1512,8 @@
                     "name": "Kieku frilandsägg L",
                     "category": "protein",
                     "packageSizeG": 64,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
                   },
                   "amount": 2,
                   "unit": "kpl"
@@ -1636,7 +1651,8 @@
                     "name": "Sötpotatis",
                     "category": "carb",
                     "packageSizeG": 200,
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "fallbackEmoji": "🍠"
                   },
                   "amount": 100,
                   "unit": "g"

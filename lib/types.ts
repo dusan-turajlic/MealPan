@@ -44,6 +44,7 @@ export interface IngredientSource {
   nutritionSource?: "openfoodfacts" | "fineli";
   packageSizeG?: number; // total package weight in grams (for rough fraction display)
   gPerDl?: number; // density: grams per dl (for rough → dl fallback)
+  fallbackEmoji?: string; // e.g. "🥚", used when imageUrl is null
 }
 
 // ─── Resolved (after OFF fetch + macro calc) ─────────────────────────────────

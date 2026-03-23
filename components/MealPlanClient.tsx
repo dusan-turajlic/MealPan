@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useCallback, useEffect, useMemo, useRef } from "react";
+import Link from "next/link";
 import { ResolvedMealPlan, MacroValues, ResolvedIngredient } from "@/lib/types";
 import { sumMacros } from "@/lib/calculateMacros";
 import { loadSwaps, saveSwaps } from "@/lib/swap/storage";
@@ -33,13 +34,14 @@ function getCurrentMealIndex(mealCount: number): number {
 interface Props {
   plan: ResolvedMealPlan;
   name: string;
+  lang: string;
 }
 
 type SelectedOptions = Record<string, number>; // mealId → optionIndex
 
 const SWAPPABLE: SwappableCategory[] = ['protein', 'carb', 'fat'];
 
-export default function MealPlanClient({ plan, name }: Props) {
+export default function MealPlanClient({ plan, name, lang }: Props) {
   const [activeProfileIndex, setActiveProfileIndex] = useState(
     () => getInitialProfileIndex(plan.profiles)
   );
@@ -155,10 +157,16 @@ export default function MealPlanClient({ plan, name }: Props) {
         {/* Sticky top section */}
         <div className="sticky top-0 z-20 bg-canvas/95 backdrop-blur-sm pt-2 pb-1 space-y-2 border-b border-rule mb-4 px-4">
           {/* Plan header */}
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between gap-2">
             {plan.description && (
-              <h1 className="text-lg font-bold text-ink truncate">{plan.description}</h1>
+              <h1 className="text-lg font-bold text-ink truncate flex-1">{plan.description}</h1>
             )}
+            <Link
+              href={`/${lang}/meals/plans/${name}/shopping`}
+              className="text-sm text-accent hover:underline shrink-0"
+            >
+              Shopping list
+            </Link>
             <ThemeToggle />
           </div>
 
