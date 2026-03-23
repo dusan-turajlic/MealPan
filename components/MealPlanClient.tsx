@@ -2,6 +2,7 @@
 
 import { useState, useCallback, useEffect, useMemo, useRef } from "react";
 import Link from "next/link";
+import { useT } from "@/lib/i18n/context";
 import { ResolvedMealPlan, MacroValues, ResolvedIngredient } from "@/lib/types";
 import { sumMacros } from "@/lib/calculateMacros";
 import { loadSwaps, saveSwaps } from "@/lib/swap/storage";
@@ -42,6 +43,7 @@ type SelectedOptions = Record<string, number>; // mealId → optionIndex
 const SWAPPABLE: SwappableCategory[] = ['protein', 'carb', 'fat'];
 
 export default function MealPlanClient({ plan, name, lang }: Props) {
+  const t = useT();
   const [activeProfileIndex, setActiveProfileIndex] = useState(
     () => getInitialProfileIndex(plan.profiles)
   );
@@ -165,7 +167,7 @@ export default function MealPlanClient({ plan, name, lang }: Props) {
               href={`/${lang}/meals/plans/${name}/shopping`}
               className="text-sm text-accent hover:underline shrink-0"
             >
-              Shopping list
+              {t.shoppingListTitle}
             </Link>
             <ThemeToggle />
           </div>

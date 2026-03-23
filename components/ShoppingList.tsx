@@ -3,6 +3,7 @@
 import { useState, useEffect, useCallback } from "react";
 import Link from "next/link";
 import { ShoppingItem } from "@/lib/shopping";
+import { useT } from "@/lib/i18n/context";
 
 interface Props {
   items: ShoppingItem[];
@@ -14,6 +15,7 @@ interface Props {
 const STORAGE_KEY_PREFIX = "shopping-checked:";
 
 export default function ShoppingListClient({ items, planName, description, lang }: Props) {
+  const t = useT();
   const storageKey = `${STORAGE_KEY_PREFIX}${planName}`;
   const [checked, setChecked] = useState<Set<string>>(new Set());
 
@@ -58,15 +60,15 @@ export default function ShoppingListClient({ items, planName, description, lang 
             href={`/${lang}/meals/plans/${planName}`}
             className="text-sm text-accent hover:underline shrink-0"
           >
-            ← Back
+            {t.shoppingListBack}
           </Link>
           <h1 className="text-lg font-bold text-ink truncate flex-1">
-            {description ? `${description} – Shopping` : "Shopping List"}
+            {description ? `${description} – ${t.shoppingListTitle}` : t.shoppingListTitle}
           </h1>
           <span className="text-sm text-dim shrink-0">{doneCount}/{totalCount}</span>
           {doneCount > 0 && (
             <button onClick={clearAll} className="text-sm text-faint hover:text-dim shrink-0">
-              Reset
+              {t.shoppingListReset}
             </button>
           )}
         </div>

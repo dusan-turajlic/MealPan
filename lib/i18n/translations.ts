@@ -25,6 +25,9 @@ const en = {
   mealOptionPickerTitle: 'Choose a meal',
   nutritionPortion: 'Portion',
   nutritionPer100g: 'Per 100 g',
+  shoppingListTitle: 'Shopping List',
+  shoppingListBack: '← Back',
+  shoppingListReset: 'Reset',
 };
 
 export type Translations = typeof en;
@@ -54,6 +57,9 @@ const sv: Translations = {
   mealOptionPickerTitle: 'Välj måltid',
   nutritionPortion: 'Portion',
   nutritionPer100g: 'Per 100 g',
+  shoppingListTitle: 'Inköpslista',
+  shoppingListBack: '← Tillbaka',
+  shoppingListReset: 'Nollställ',
 };
 
 const hr: Translations = {
@@ -81,6 +87,9 @@ const hr: Translations = {
   mealOptionPickerTitle: 'Odaberi obrok',
   nutritionPortion: 'Porcija',
   nutritionPer100g: 'Na 100 g',
+  shoppingListTitle: 'Lista za kupnju',
+  shoppingListBack: '← Natrag',
+  shoppingListReset: 'Resetiraj',
 };
 
 export const translations: Record<Locale, Translations> = { en, sv, hr };
