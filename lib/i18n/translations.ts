@@ -28,6 +28,7 @@ const en = {
   shoppingListTitle: 'Shopping List',
   shoppingListBack: '← Back',
   shoppingListReset: 'Reset',
+  updateAvailable: 'Update available — tap to reload',
 };
 
 export type Translations = typeof en;
@@ -60,6 +61,7 @@ const sv: Translations = {
   shoppingListTitle: 'Inköpslista',
   shoppingListBack: '← Tillbaka',
   shoppingListReset: 'Nollställ',
+  updateAvailable: 'Uppdatering tillgänglig — tryck för att ladda om',
 };
 
 const hr: Translations = {
@@ -90,6 +92,7 @@ const hr: Translations = {
   shoppingListTitle: 'Lista za kupnju',
   shoppingListBack: '← Natrag',
   shoppingListReset: 'Resetiraj',
+  updateAvailable: 'Dostupno ažuriranje — dodirnite za ponovni učitavanje',
 };
 
 export const translations: Record<Locale, Translations> = { en, sv, hr };
