@@ -31,8 +31,12 @@ const novaColors: Record<number, string> = {
 };
 
 export default function ProductModal({ productId, nutritionSource, fallbackName, onClose }: Props) {
-  const detail = useProductDetail(productId);
+  const cached = useProductDetail(productId);
+  const [fetched, setFetched] = useState<import("@/lib/types").ProductDetail | null>(null);
   const [visible, setVisible] = useState(false);
+
+  // Use cached detail from the prefetch store; fall back to fetching directly.
+  const detail = cached ?? fetched;
 
   useEffect(() => {
     document.body.style.overflow = "hidden";
@@ -42,6 +46,14 @@ export default function ProductModal({ productId, nutritionSource, fallbackName,
       cancelAnimationFrame(raf);
     };
   }, []);
+
+  useEffect(() => {
+    if (cached) return; // already in store, no need to fetch
+    fetch(`/api/${nutritionSource}/${productId}`)
+      .then((r) => r.json())
+      .then((d) => setFetched(d))
+      .catch(() => setFetched({ available: false } as import("@/lib/types").ProductDetail));
+  }, [productId, nutritionSource, cached]);
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
