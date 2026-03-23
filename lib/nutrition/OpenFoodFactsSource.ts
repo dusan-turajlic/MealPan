@@ -53,6 +53,7 @@ class OFFAdapter {
       per100g,
       available: true,
       nutritionSource: "openfoodfacts",
+      imageUrl: p.image_front_url ?? p.image_url ?? null,
     };
   }
 
@@ -95,6 +96,7 @@ class OFFAdapter {
       per100g: { kcal: 0, protein: 0, carbs: 0, fat: 0 },
       available: false,
       nutritionSource: "openfoodfacts",
+      imageUrl: null,
     };
   }
 
@@ -121,7 +123,7 @@ const OFF_HEADERS = {
   "User-Agent": "MealPlanApp/1.0 (https://github.com/meal-plan-app)",
 };
 
-const NUTRITION_FIELDS = "code,product_name,nutriments";
+const NUTRITION_FIELDS = "code,product_name,image_front_url,image_url,nutriments";
 const DETAIL_FIELDS = "product_name,brands,quantity,image_front_url,image_url,nutriscore_grade,nova_group,ingredients_text,allergens,nutriments";
 
 function offUrl(barcode: string, fields: string) {

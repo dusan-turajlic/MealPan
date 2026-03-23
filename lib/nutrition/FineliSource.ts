@@ -30,6 +30,7 @@ class FineliAdapter {
       per100g,
       available: true,
       nutritionSource: "fineli",
+      imageUrl: null,
     };
   }
 
@@ -65,6 +66,7 @@ class FineliAdapter {
       per100g: { kcal: 0, protein: 0, carbs: 0, fat: 0 },
       available: false,
       nutritionSource: "fineli",
+      imageUrl: null,
     };
   }
 

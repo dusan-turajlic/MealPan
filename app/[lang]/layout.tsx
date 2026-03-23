@@ -18,6 +18,6 @@ export default async function LangLayout({
   if (!isValidLocale(lang)) notFound();
 
   return (
-    <I18nProvider translations={translations[lang]}>{children}</I18nProvider>
+    <I18nProvider translations={translations[lang]} locale={lang}>{children}</I18nProvider>
   );
 }

@@ -94,6 +94,8 @@ function toGrams(amount: number, unit: string, source: IngredientSource): number
   if (unit === "dl" && source.gPerDl) return amount * source.gPerDl;
   if (unit === "ml") return amount;
   if (unit === "kpl" && source.packageSizeG) return amount * source.packageSizeG;
+  if (unit === "msk") return amount * 15; // 1 tablespoon ≈ 15 ml ≈ 15 g
+  if (unit === "tsk") return amount * 5;  // 1 teaspoon ≈ 5 ml ≈ 5 g
   return amount;
 }
 
@@ -108,5 +110,6 @@ function nullNutrition(source: IngredientSource): ResolvedNutrition {
     per100g: zeroed(),
     available: false,
     nutritionSource: source.nutritionSource ?? "openfoodfacts",
+    imageUrl: null,
   };
 }

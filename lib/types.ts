@@ -53,6 +53,7 @@ export interface ResolvedNutrition {
   per100g: MacroValues;
   available: boolean;
   nutritionSource: "openfoodfacts" | "fineli";
+  imageUrl: string | null;
 }
 
 export interface ResolvedIngredient {

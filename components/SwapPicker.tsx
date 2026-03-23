@@ -8,6 +8,7 @@ interface Props {
   original: ResolvedIngredient;
   alternatives: ResolvedIngredient[];
   isSwapped: boolean;
+  exact: boolean;
   onSelect: (barcode: string) => void;
   onClose: () => void;
 }
@@ -17,6 +18,7 @@ export default function SwapPicker({
   original,
   alternatives,
   isSwapped,
+  exact,
   onSelect,
   onClose,
 }: Props) {
@@ -60,10 +62,21 @@ export default function SwapPicker({
               <button
                 key={ing.source.barcode + (isOriginal ? '-original' : '')}
                 onClick={() => handleSelect(isOriginal ? '' : ing.source.barcode)}
-                className={`w-full px-4 py-3 flex items-center justify-between border-b border-rule last:border-0 text-left transition-colors ${
+                className={`w-full px-4 py-3 flex items-center gap-3 border-b border-rule last:border-0 text-left transition-colors ${
                   isCurrent ? 'bg-lift' : 'hover:bg-lift'
                 }`}
               >
+                <div className="w-12 h-12 rounded-lg bg-lift shrink-0 overflow-hidden flex items-center justify-center">
+                  {ing.nutrition.imageUrl ? (
+                    <img
+                      src={ing.nutrition.imageUrl}
+                      alt=""
+                      className="w-full h-full object-contain"
+                    />
+                  ) : (
+                    <span className="text-xl">🍽️</span>
+                  )}
+                </div>
                 <div className="flex-1 min-w-0">
                   <div className="flex items-center gap-2">
                     {isOriginal && (
@@ -72,15 +85,15 @@ export default function SwapPicker({
                       </span>
                     )}
                     <span className="text-sm font-medium text-ink truncate">
-                      {ing.nutrition.available ? ing.nutrition.productName : ing.source.name}
+                      {ing.source.name}
                     </span>
                   </div>
                   <div className="text-xs text-dim mt-0.5">
-                    {ing.amount} {ing.unit}
+                    {exact ? `${ing.amount} ${ing.unit}` : (ing.roughDisplay ?? `${ing.amount} ${ing.unit}`)}
                   </div>
                 </div>
                 {ing.nutrition.available && (
-                  <div className="text-right text-xs text-dim shrink-0 ml-3">
+                  <div className="text-right text-xs text-dim shrink-0">
                     <div className="font-medium text-ink">{Math.round(ing.servingMacros.kcal)} kcal</div>
                     <div>
                       {Math.round(ing.servingMacros.protein)}{t.macroProtein} · {Math.round(ing.servingMacros.carbs)}{t.macroCarbs} · {Math.round(ing.servingMacros.fat)}{t.macroFat}

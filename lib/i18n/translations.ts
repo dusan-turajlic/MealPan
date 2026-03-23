@@ -22,6 +22,9 @@ const en = {
   swapIngredient: 'Swap',
   swapReset: 'Original',
   swapPickerTitle: 'Choose a swap',
+  mealOptionPickerTitle: 'Choose a meal',
+  nutritionPortion: 'Portion',
+  nutritionPer100g: 'Per 100 g',
 };
 
 export type Translations = typeof en;
@@ -48,6 +51,9 @@ const sv: Translations = {
   swapIngredient: 'Byt',
   swapReset: 'Original',
   swapPickerTitle: 'Välj alternativ',
+  mealOptionPickerTitle: 'Välj måltid',
+  nutritionPortion: 'Portion',
+  nutritionPer100g: 'Per 100 g',
 };
 
 const hr: Translations = {
@@ -72,6 +78,9 @@ const hr: Translations = {
   swapIngredient: 'Zamijeni',
   swapReset: 'Original',
   swapPickerTitle: 'Odaberi zamjenu',
+  mealOptionPickerTitle: 'Odaberi obrok',
+  nutritionPortion: 'Porcija',
+  nutritionPer100g: 'Na 100 g',
 };
 
 export const translations: Record<Locale, Translations> = { en, sv, hr };

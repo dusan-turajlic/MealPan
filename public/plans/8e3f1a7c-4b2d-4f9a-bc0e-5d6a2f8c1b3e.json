@@ -32,7 +32,13 @@
     {
       "id": "vardagar",
       "label": "Vardagar",
-      "days": [1, 2, 3, 4, 5],
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
       "meals": [
         {
           "id": "frukost",
@@ -50,7 +56,7 @@
                     "gPerDl": 40,
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 40,
+                  "amount": 15,
                   "unit": "g"
                 },
                 {
@@ -68,8 +74,8 @@
                     "barcode": "20886875",
                     "name": "Milbona keso (fettfri)",
                     "category": "protein",
-                    "packageSizeG": 500,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
                   },
                   "amount": 100,
                   "unit": "g"
@@ -82,8 +88,19 @@
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 50,
+                  "amount": 30,
                   "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "376",
+                    "name": "Valnöt",
+                    "category": "fat",
+                    "nutritionSource": "fineli",
+                    "packageSizeG": 7
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
                 }
               ]
             },
@@ -107,8 +124,8 @@
                     "barcode": "20886875",
                     "name": "Milbona keso (fettfri)",
                     "category": "protein",
-                    "packageSizeG": 500,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
                   },
                   "amount": 100,
                   "unit": "g"
@@ -197,7 +214,8 @@
                     "barcode": "447",
                     "name": "Mansikka (färsk)",
                     "category": "carb",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 60
                   },
                   "amount": 50,
                   "unit": "g"
@@ -213,7 +231,8 @@
                     "barcode": "4056489491231",
                     "name": "Milbona skyr hallon",
                     "category": "protein",
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
                   },
                   "amount": 150,
                   "unit": "g"
@@ -257,7 +276,8 @@
                     "barcode": "4056489491231",
                     "name": "Milbona skyr hallon",
                     "category": "protein",
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
                   },
                   "amount": 150,
                   "unit": "g"
@@ -334,8 +354,8 @@
                     "barcode": "20886875",
                     "name": "Milbona keso (fettfri)",
                     "category": "protein",
-                    "packageSizeG": 500,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
                   },
                   "amount": 150,
                   "unit": "g"
@@ -345,7 +365,8 @@
                     "barcode": "346",
                     "name": "Gurka",
                     "category": "mixed",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
                   },
                   "amount": 100,
                   "unit": "g"
@@ -381,7 +402,7 @@
                     "gPerDl": 40,
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 30,
+                  "amount": 15,
                   "unit": "g"
                 },
                 {
@@ -404,7 +425,83 @@
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 50,
+                  "amount": 30,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "31211",
+                    "name": "Pumpafrön",
+                    "category": "fat",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            },
+            {
+              "id": "keso-pumpafrön",
+              "label": "Keso med pumpafrön & gurka",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (fettfri)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "31211",
+                    "name": "Pumpafrön",
+                    "category": "fat",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                },
+                {
+                  "source": {
+                    "barcode": "346",
+                    "name": "Gurka",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "mandlar",
+              "label": "Mandlar & keso",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "379",
+                    "name": "Mandel",
+                    "category": "fat",
+                    "nutritionSource": "fineli",
+                    "packageSizeG": 1.2
+                  },
+                  "amount": 25,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (fettfri)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
                   "unit": "g"
                 }
               ]
@@ -438,8 +535,8 @@
                     "packageSizeG": 200,
                     "nutritionSource": "fineli"
                   },
-                  "amount": 1,
-                  "unit": "kpl"
+                  "amount": 100,
+                  "unit": "g"
                 },
                 {
                   "source": {
@@ -459,8 +556,8 @@
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 10,
-                  "unit": "g"
+                  "amount": 1,
+                  "unit": "msk"
                 }
               ]
             },
@@ -511,6 +608,16 @@
                   },
                   "amount": 200,
                   "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "11212",
+                    "name": "Solrosfrön",
+                    "category": "fat",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
                 }
               ]
             },
@@ -534,9 +641,10 @@
                     "barcode": "2033",
                     "name": "Kokta potatisar",
                     "category": "carb",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
                   },
-                  "amount": 200,
+                  "amount": 120,
                   "unit": "g"
                 },
                 {
@@ -544,7 +652,8 @@
                     "barcode": "355",
                     "name": "Paprika (blandad, fryst)",
                     "category": "mixed",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 80
                   },
                   "amount": 150,
                   "unit": "g"
@@ -556,8 +665,8 @@
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 10,
-                  "unit": "g"
+                  "amount": 1,
+                  "unit": "msk"
                 }
               ]
             },
@@ -581,9 +690,10 @@
                     "barcode": "2033",
                     "name": "Kokta potatisar",
                     "category": "carb",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
                   },
-                  "amount": 200,
+                  "amount": 120,
                   "unit": "g"
                 },
                 {
@@ -591,7 +701,8 @@
                     "barcode": "355",
                     "name": "Paprika (färsk)",
                     "category": "mixed",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 80
                   },
                   "amount": 150,
                   "unit": "g"
@@ -603,8 +714,8 @@
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 10,
-                  "unit": "g"
+                  "amount": 1,
+                  "unit": "msk"
                 }
               ]
             }
@@ -638,7 +749,7 @@
                     "gPerDl": 90,
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 45,
+                  "amount": 25,
                   "unit": "g"
                 },
                 {
@@ -670,8 +781,8 @@
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 10,
-                  "unit": "g"
+                  "amount": 1,
+                  "unit": "msk"
                 }
               ]
             },
@@ -730,8 +841,8 @@
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 10,
-                  "unit": "g"
+                  "amount": 1,
+                  "unit": "msk"
                 }
               ]
             },
@@ -755,9 +866,10 @@
                     "barcode": "30346",
                     "name": "Basmatiris (kokt)",
                     "category": "carb",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 65
                   },
-                  "amount": 150,
+                  "amount": 80,
                   "unit": "g"
                 },
                 {
@@ -776,7 +888,8 @@
                     "barcode": "34228",
                     "name": "Spenat (fryst)",
                     "category": "mixed",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 80
                   },
                   "amount": 100,
                   "unit": "g"
@@ -788,8 +901,8 @@
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 10,
-                  "unit": "g"
+                  "amount": 1,
+                  "unit": "msk"
                 }
               ]
             }
@@ -864,7 +977,8 @@
                     "barcode": "447",
                     "name": "Mansikka (färsk)",
                     "category": "carb",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 60
                   },
                   "amount": 50,
                   "unit": "g"
@@ -880,7 +994,8 @@
                     "barcode": "4056489491231",
                     "name": "Milbona skyr hallon",
                     "category": "protein",
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
                   },
                   "amount": 150,
                   "unit": "g"
@@ -924,7 +1039,8 @@
                     "barcode": "4056489491231",
                     "name": "Milbona skyr hallon",
                     "category": "protein",
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
                   },
                   "amount": 150,
                   "unit": "g"
@@ -977,7 +1093,7 @@
                     "packageSizeG": 14,
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 4,
+                  "amount": 2,
                   "unit": "kpl"
                 },
                 {
@@ -985,8 +1101,74 @@
                     "barcode": "20886875",
                     "name": "Milbona keso (fettfri)",
                     "category": "protein",
-                    "packageSizeG": 500,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "keso-pumpafrön",
+              "label": "Keso med pumpafrön & gurka",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (fettfri)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "31211",
+                    "name": "Pumpafrön",
+                    "category": "fat",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 2,
+                  "unit": "msk"
+                },
+                {
+                  "source": {
+                    "barcode": "346",
+                    "name": "Gurka",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "mandlar",
+              "label": "Mandlar & keso",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "379",
+                    "name": "Mandel",
+                    "category": "fat",
+                    "nutritionSource": "fineli",
+                    "packageSizeG": 1.2
+                  },
+                  "amount": 25,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (fettfri)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
                   },
                   "amount": 100,
                   "unit": "g"
@@ -1000,7 +1182,10 @@
     {
       "id": "veckoslut",
       "label": "Veckoslut",
-      "days": [0, 6],
+      "days": [
+        0,
+        6
+      ],
       "meals": [
         {
           "id": "brunch",
@@ -1018,7 +1203,7 @@
                     "gPerDl": 40,
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 80,
+                  "amount": 40,
                   "unit": "g"
                 },
                 {
@@ -1047,8 +1232,8 @@
                     "barcode": "20886875",
                     "name": "Milbona keso (fettfri)",
                     "category": "protein",
-                    "packageSizeG": 500,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
                   },
                   "amount": 100,
                   "unit": "g"
@@ -1061,8 +1246,19 @@
                     "packageSizeG": 400,
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 50,
+                  "amount": 30,
                   "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "376",
+                    "name": "Valnöt",
+                    "category": "fat",
+                    "nutritionSource": "fineli",
+                    "packageSizeG": 7
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
                 }
               ]
             },
@@ -1089,7 +1285,7 @@
                     "packageSizeG": 14,
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 4,
+                  "amount": 2,
                   "unit": "kpl"
                 },
                 {
@@ -1103,6 +1299,17 @@
                   },
                   "amount": 200,
                   "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "379",
+                    "name": "Mandel",
+                    "category": "fat",
+                    "nutritionSource": "fineli",
+                    "packageSizeG": 1.2
+                  },
+                  "amount": 17,
+                  "unit": "kpl"
                 }
               ]
             }
@@ -1177,7 +1384,8 @@
                     "barcode": "447",
                     "name": "Mansikka (färsk)",
                     "category": "carb",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 60
                   },
                   "amount": 50,
                   "unit": "g"
@@ -1193,7 +1401,8 @@
                     "barcode": "4056489491231",
                     "name": "Milbona skyr hallon",
                     "category": "protein",
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
                   },
                   "amount": 150,
                   "unit": "g"
@@ -1237,7 +1446,8 @@
                     "barcode": "4056489491231",
                     "name": "Milbona skyr hallon",
                     "category": "protein",
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
                   },
                   "amount": 150,
                   "unit": "g"
@@ -1314,8 +1524,8 @@
                     "barcode": "20886875",
                     "name": "Milbona keso (fettfri)",
                     "category": "protein",
-                    "packageSizeG": 500,
-                    "nutritionSource": "openfoodfacts"
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
                   },
                   "amount": 150,
                   "unit": "g"
@@ -1325,7 +1535,74 @@
                     "barcode": "346",
                     "name": "Gurka",
                     "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "keso-pumpafrön",
+              "label": "Keso med pumpafrön & gurka",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (fettfri)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "31211",
+                    "name": "Pumpafrön",
+                    "category": "fat",
                     "nutritionSource": "fineli"
+                  },
+                  "amount": 2,
+                  "unit": "msk"
+                },
+                {
+                  "source": {
+                    "barcode": "346",
+                    "name": "Gurka",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "mandlar",
+              "label": "Mandlar & keso",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "379",
+                    "name": "Mandel",
+                    "category": "fat",
+                    "nutritionSource": "fineli",
+                    "packageSizeG": 1.2
+                  },
+                  "amount": 25,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (fettfri)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
                   },
                   "amount": 100,
                   "unit": "g"
@@ -1361,8 +1638,8 @@
                     "packageSizeG": 200,
                     "nutritionSource": "fineli"
                   },
-                  "amount": 1,
-                  "unit": "kpl"
+                  "amount": 100,
+                  "unit": "g"
                 },
                 {
                   "source": {
@@ -1382,8 +1659,8 @@
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 10,
-                  "unit": "g"
+                  "amount": 1,
+                  "unit": "msk"
                 }
               ]
             },
@@ -1442,8 +1719,8 @@
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 10,
-                  "unit": "g"
+                  "amount": 1,
+                  "unit": "msk"
                 }
               ]
             },
@@ -1467,9 +1744,10 @@
                     "barcode": "2033",
                     "name": "Kokta potatisar",
                     "category": "carb",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
                   },
-                  "amount": 200,
+                  "amount": 120,
                   "unit": "g"
                 },
                 {
@@ -1477,7 +1755,8 @@
                     "barcode": "355",
                     "name": "Paprika (blandad, fryst)",
                     "category": "mixed",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 80
                   },
                   "amount": 150,
                   "unit": "g"
@@ -1489,8 +1768,8 @@
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 10,
-                  "unit": "g"
+                  "amount": 1,
+                  "unit": "msk"
                 }
               ]
             },
@@ -1514,9 +1793,10 @@
                     "barcode": "2033",
                     "name": "Kokta potatisar",
                     "category": "carb",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
                   },
-                  "amount": 200,
+                  "amount": 120,
                   "unit": "g"
                 },
                 {
@@ -1524,7 +1804,8 @@
                     "barcode": "355",
                     "name": "Paprika (färsk)",
                     "category": "mixed",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 80
                   },
                   "amount": 150,
                   "unit": "g"
@@ -1536,8 +1817,8 @@
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 10,
-                  "unit": "g"
+                  "amount": 1,
+                  "unit": "msk"
                 }
               ]
             },
@@ -1561,9 +1842,10 @@
                     "barcode": "30346",
                     "name": "Basmatiris (kokt)",
                     "category": "carb",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 65
                   },
-                  "amount": 150,
+                  "amount": 80,
                   "unit": "g"
                 },
                 {
@@ -1582,7 +1864,8 @@
                     "barcode": "34228",
                     "name": "Spenat (fryst)",
                     "category": "mixed",
-                    "nutritionSource": "fineli"
+                    "nutritionSource": "fineli",
+                    "gPerDl": 80
                   },
                   "amount": 100,
                   "unit": "g"
@@ -1594,8 +1877,8 @@
                     "category": "fat",
                     "nutritionSource": "openfoodfacts"
                   },
-                  "amount": 10,
-                  "unit": "g"
+                  "amount": 1,
+                  "unit": "msk"
                 }
               ]
             }

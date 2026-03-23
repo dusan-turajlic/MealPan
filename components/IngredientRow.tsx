@@ -51,60 +51,51 @@ export default function IngredientRow({
   const canSwap = alternatives && alternatives.length > 0;
 
   return (
-    <div className="flex items-start justify-between py-2 gap-3">
-      <div className="flex-1 min-w-0">
-        <div className="flex items-center gap-2 flex-wrap">
-          <span className="text-sm font-medium text-ink truncate">
-            {source.name}
-          </span>
-          {nutrition.available && (
-            <button
-              onClick={() => setModalOpen(true)}
-              className="ml-1 p-0.5 text-faint hover:text-dim transition-colors"
-              aria-label="Product details"
-            >
-              ⓘ
-            </button>
-          )}
-          {!nutrition.available && (
-            <span className="shrink-0 text-xs px-1.5 py-0.5 rounded bg-lift text-faint">
-              {t.noNutritionalData}
+    <div className="py-2">
+      <div
+        className={`flex items-start gap-3 ${nutrition.available ? 'cursor-pointer' : ''}`}
+        onClick={nutrition.available ? () => setModalOpen(true) : undefined}
+        role={nutrition.available ? 'button' : undefined}
+      >
+        <div className="flex-1 min-w-0">
+          <div className="flex items-center gap-2 flex-wrap">
+            <span className="text-sm font-medium text-ink truncate">
+              {source.name}
             </span>
-          )}
-          <span className={`shrink-0 text-xs px-1.5 py-0.5 rounded ${badgeClass}`}>
-            {badgeLabel}
-          </span>
-          {canSwap && (
-            <button
-              onClick={() => setSwapPickerOpen(true)}
-              className={`shrink-0 text-xs px-1.5 py-0.5 rounded transition-colors ${
-                isSwapped
-                  ? 'bg-accent/20 text-accent hover:bg-accent/30'
-                  : 'bg-lift text-dim hover:text-ink'
-              }`}
-              aria-label={t.swapIngredient}
-            >
-              ⇄
-            </button>
-          )}
-        </div>
-        <div className="text-xs text-dim mt-0.5">{displayAmount}</div>
-      </div>
-
-      {nutrition.available && (
-        <div className="text-right text-xs text-dim shrink-0">
-          <div className="font-medium text-ink">{Math.round(servingMacros.kcal)} kcal</div>
-          <div>
-            {Math.round(servingMacros.protein)}{t.macroProtein} · {Math.round(servingMacros.carbs)}{t.macroCarbs} · {Math.round(servingMacros.fat)}{t.macroFat}
+            {!nutrition.available && (
+              <span className="shrink-0 text-xs px-1.5 py-0.5 rounded bg-lift text-faint">
+                {t.noNutritionalData}
+              </span>
+            )}
+            <span className={`shrink-0 text-xs px-1.5 py-0.5 rounded ${badgeClass}`}>
+              {badgeLabel}
+            </span>
+            {canSwap && (
+              <button
+                onClick={(e) => { e.stopPropagation(); setSwapPickerOpen(true); }}
+                className={`shrink-0 text-xs px-1.5 py-0.5 rounded transition-colors ${
+                  isSwapped
+                    ? 'bg-accent/20 text-accent hover:bg-accent/30'
+                    : 'bg-lift text-dim hover:text-ink'
+                }`}
+                aria-label={t.swapIngredient}
+              >
+                ⇄
+              </button>
+            )}
           </div>
+          <div className="text-xs text-dim mt-0.5">{displayAmount}</div>
         </div>
-      )}
+      </div>
 
       {modalOpen && (
         <ProductModal
           productId={nutrition.barcode}
           nutritionSource={nutrition.nutritionSource}
-          fallbackName={nutrition.productName}
+          fallbackName={source.name}
+          servingMacros={servingMacros}
+          servingAmount={amount}
+          servingUnit={unit}
           onClose={() => setModalOpen(false)}
         />
       )}
@@ -115,6 +106,7 @@ export default function IngredientRow({
           original={originalIngredient}
           alternatives={alternatives!}
           isSwapped={isSwapped ?? false}
+          exact={exact}
           onSelect={(barcode) => {
             if (barcode === '') onReset?.();
             else onSwap?.(barcode);

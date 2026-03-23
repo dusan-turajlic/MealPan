@@ -52,6 +52,9 @@ export class RoughFormatter implements MeasurementFormatter {
     if (unit === "kpl") {
       return `${Math.round(amount)} ${this.words.pcs}`;
     }
+    if (unit === "msk" || unit === "tsk") {
+      return `${Math.round(amount)} ${unit}`;
+    }
 
     // unit === "g" — try package fraction first
     if (source.packageSizeG) {

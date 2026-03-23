@@ -2,11 +2,16 @@
 
 import { useEffect, useState } from "react";
 import { useProductDetail } from "@/lib/productDetail/context";
+import { useT } from "@/lib/i18n/context";
+import { MacroValues } from "@/lib/types";
 
 interface Props {
   productId: string;
   nutritionSource: "openfoodfacts" | "fineli";
   fallbackName: string;
+  servingMacros: MacroValues;
+  servingAmount: number;
+  servingUnit: string;
   onClose: () => void;
 }
 
@@ -30,10 +35,13 @@ const novaColors: Record<number, string> = {
   4: "bg-red-500 text-white",
 };
 
-export default function ProductModal({ productId, nutritionSource, fallbackName, onClose }: Props) {
+export default function ProductModal({ productId, nutritionSource, fallbackName, servingMacros, servingAmount, servingUnit, onClose }: Props) {
+  const t = useT();
   const cached = useProductDetail(productId);
   const [fetched, setFetched] = useState<import("@/lib/types").ProductDetail | null>(null);
   const [visible, setVisible] = useState(false);
+  const [portionOpen, setPortionOpen] = useState(true);
+  const [per100gOpen, setPer100gOpen] = useState(false);
 
   // Use cached detail from the prefetch store; fall back to fetching directly.
   const detail = cached ?? fetched;
@@ -107,7 +115,7 @@ export default function ProductModal({ productId, nutritionSource, fallbackName,
             {/* Header */}
             <div className="flex items-start justify-between gap-2">
               <span className="font-semibold text-ink leading-snug">
-                {detail.productName || fallbackName}
+                {fallbackName}
               </span>
               <button
                 onClick={onClose}
@@ -122,7 +130,7 @@ export default function ProductModal({ productId, nutritionSource, fallbackName,
             {detail.imageUrl && (
               <img
                 src={detail.imageUrl}
-                alt={detail.productName || fallbackName}
+                alt={fallbackName}
                 className="h-32 w-full object-contain rounded-lg bg-lift"
               />
             )}
@@ -155,27 +163,58 @@ export default function ProductModal({ productId, nutritionSource, fallbackName,
               )}
             </div>
 
-            {/* Nutrition table per 100g */}
-            <div>
-              <h3 className="text-xs font-semibold text-dim uppercase tracking-wide mb-1">
-                Per 100 g
-              </h3>
-              <table className="w-full text-sm">
-                <tbody className="divide-y divide-rule">
-                  <NutrRow label="Energy" value={`${Math.round(detail.per100g.kcal)} kcal`} />
-                  <NutrRow label="Protein" value={`${detail.per100g.protein.toFixed(1)} g`} />
-                  <NutrRow label="Carbohydrates" value={`${detail.per100g.carbs.toFixed(1)} g`} indent={false} />
-                  {detail.per100g.sugars != null && (
-                    <NutrRow label="of which sugars" value={`${detail.per100g.sugars.toFixed(1)} g`} indent />
-                  )}
-                  <NutrRow label="Fat" value={`${detail.per100g.fat.toFixed(1)} g`} indent={false} />
-                  {detail.per100g.saturatedFat != null && (
-                    <NutrRow label="of which saturated" value={`${detail.per100g.saturatedFat.toFixed(1)} g`} indent />
-                  )}
-                  <NutrRow label="Fiber" value={`${detail.per100g.fiber.toFixed(1)} g`} />
-                  <NutrRow label="Salt" value={`${detail.per100g.salt.toFixed(2)} g`} />
-                </tbody>
-              </table>
+            {/* Accordion 1 — Portion */}
+            <div className="border border-rule rounded-lg overflow-hidden">
+              <button
+                className="w-full px-4 py-3 flex items-center justify-between text-left bg-lift hover:bg-lift/80 transition-colors"
+                onClick={() => setPortionOpen((o) => !o)}
+              >
+                <span className="text-xs font-semibold text-dim uppercase tracking-wide">
+                  {t.nutritionPortion} ({servingAmount} {servingUnit})
+                </span>
+                <span className="text-dim text-sm">{portionOpen ? '▾' : '▸'}</span>
+              </button>
+              {portionOpen && (
+                <table className="w-full text-sm px-4">
+                  <tbody className="divide-y divide-rule">
+                    <NutrRow label="Energy" value={`${Math.round(servingMacros.kcal)} kcal`} />
+                    <NutrRow label="Protein" value={`${servingMacros.protein.toFixed(1)} g`} />
+                    <NutrRow label="Carbohydrates" value={`${servingMacros.carbs.toFixed(1)} g`} />
+                    <NutrRow label="Fat" value={`${servingMacros.fat.toFixed(1)} g`} />
+                  </tbody>
+                </table>
+              )}
+            </div>
+
+            {/* Accordion 2 — Per 100 g */}
+            <div className="border border-rule rounded-lg overflow-hidden">
+              <button
+                className="w-full px-4 py-3 flex items-center justify-between text-left bg-lift hover:bg-lift/80 transition-colors"
+                onClick={() => setPer100gOpen((o) => !o)}
+              >
+                <span className="text-xs font-semibold text-dim uppercase tracking-wide">
+                  {t.nutritionPer100g}
+                </span>
+                <span className="text-dim text-sm">{per100gOpen ? '▾' : '▸'}</span>
+              </button>
+              {per100gOpen && (
+                <table className="w-full text-sm px-4">
+                  <tbody className="divide-y divide-rule">
+                    <NutrRow label="Energy" value={`${Math.round(detail.per100g.kcal)} kcal`} />
+                    <NutrRow label="Protein" value={`${detail.per100g.protein.toFixed(1)} g`} />
+                    <NutrRow label="Carbohydrates" value={`${detail.per100g.carbs.toFixed(1)} g`} indent={false} />
+                    {detail.per100g.sugars != null && (
+                      <NutrRow label="of which sugars" value={`${detail.per100g.sugars.toFixed(1)} g`} indent />
+                    )}
+                    <NutrRow label="Fat" value={`${detail.per100g.fat.toFixed(1)} g`} indent={false} />
+                    {detail.per100g.saturatedFat != null && (
+                      <NutrRow label="of which saturated" value={`${detail.per100g.saturatedFat.toFixed(1)} g`} indent />
+                    )}
+                    <NutrRow label="Fiber" value={`${detail.per100g.fiber.toFixed(1)} g`} />
+                    <NutrRow label="Salt" value={`${detail.per100g.salt.toFixed(2)} g`} />
+                  </tbody>
+                </table>
+              )}
             </div>
 
             {/* Ingredients */}
@@ -227,8 +266,8 @@ function NutrRow({
 }) {
   return (
     <tr>
-      <td className={`py-1 text-dim ${indent ? "pl-4" : ""}`}>{label}</td>
-      <td className="py-1 text-right text-ink font-medium">{value}</td>
+      <td className={`py-2 px-4 text-dim ${indent ? "pl-8" : ""}`}>{label}</td>
+      <td className="py-2 px-4 text-right text-ink font-medium">{value}</td>
     </tr>
   );
 }
