@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist } from "next/font/google";
 import { headers } from "next/headers";
 import { ThemeProvider } from "@/lib/theme/context";
+import SplashScreenDismiss from "@/components/SplashScreenDismiss";
 import "./globals.css";
 
 const geist = Geist({
@@ -43,6 +44,17 @@ export default async function RootLayout({
         className={`${geist.variable} font-sans bg-canvas text-ink antialiased`}
       >
         <script dangerouslySetInnerHTML={{ __html: `(function(){try{var s=localStorage.getItem('meal-plan-theme');var prefersDark=window.matchMedia('(prefers-color-scheme: dark)').matches;if(s==='dark'||(!s&&prefersDark)){document.documentElement.classList.add('dark');}}catch(e){}})();` }} />
+        <div id="splash-screen">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="/icons/icon-192.png" alt="" className="splash-icon" />
+          <span className="splash-title">Meal Plan</span>
+          <div className="splash-dots">
+            <div className="splash-dot" />
+            <div className="splash-dot" />
+            <div className="splash-dot" />
+          </div>
+        </div>
+        <SplashScreenDismiss />
         <ThemeProvider>
           <div className="pt-safe pb-safe px-safe min-h-screen">{children}</div>
         </ThemeProvider>
