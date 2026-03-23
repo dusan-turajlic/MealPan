@@ -1,7 +1,8 @@
 "use client";
 
-import { forwardRef } from "react";
+import { forwardRef, useEffect } from "react";
 import { ResolvedMeal } from "@/lib/types";
+import { usePrefetchMealDetails } from "@/lib/productDetail/context";
 import OptionTabBar from "./OptionTabBar";
 import OptionDetail from "./OptionDetail";
 
@@ -17,6 +18,15 @@ const MealSection = forwardRef<HTMLDivElement, Props>(function MealSection(
   { meal, profileId, selectedIndex, onSelect, exact },
   ref
 ) {
+  const prefetch = usePrefetchMealDetails();
+
+  useEffect(() => {
+    // Prefetch details for every ingredient across all options in this meal.
+    // The context deduplicates — already-fetched barcodes are skipped.
+    const all = meal.options.flatMap((o) => o.ingredients);
+    prefetch(all);
+  }, [meal, prefetch]);
+
   const activeOption = meal.options[selectedIndex] ?? meal.options[0];
 
   return (

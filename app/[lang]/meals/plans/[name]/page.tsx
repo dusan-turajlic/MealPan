@@ -2,6 +2,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { loadPlan } from "@/lib/loadPlan";
 import { getNutritionSource } from "@/lib/nutrition/registry";
+import type { OpenFoodFactsSource } from "@/lib/nutrition/OpenFoodFactsSource";
 import { MealPlanResolver } from "@/lib/MealPlanResolver";
 import { MeasurementFormatterFactory } from "@/lib/formatters/MeasurementFormatter";
 import { ResolvedNutrition } from "@/lib/types";
@@ -27,33 +28,41 @@ export default async function MealPlanPage({ params }: Props) {
 
   const plan = loadPlan(name);
 
-  // Collect unique sources across all profiles, meals, options, ingredients
-  const sourceMap = new Map<string, { name: string; nutritionSource: string }>(); // barcode → {name, source}
+  // Collect unique ingredients grouped by nutrition source
+  const offItems: { barcode: string; fallbackName: string }[] = [];
+  const otherItems: { barcode: string; fallbackName: string; source: string }[] = [];
+  const seen = new Set<string>();
+
   for (const profile of plan.profiles) {
     for (const meal of profile.meals) {
       for (const option of meal.options) {
         for (const ing of option.ingredients) {
-          if (!sourceMap.has(ing.source.barcode)) {
-            sourceMap.set(ing.source.barcode, {
-              name: ing.source.name,
-              nutritionSource: ing.source.nutritionSource ?? "openfoodfacts",
-            });
+          if (seen.has(ing.source.barcode)) continue;
+          seen.add(ing.source.barcode);
+          const src = ing.source.nutritionSource ?? "openfoodfacts";
+          if (src === "openfoodfacts") {
+            offItems.push({ barcode: ing.source.barcode, fallbackName: ing.source.name });
+          } else {
+            otherItems.push({ barcode: ing.source.barcode, fallbackName: ing.source.name, source: src });
           }
         }
       }
     }
   }
 
-  // Fetch nutrition for all unique barcodes in parallel
-  const entries = [...sourceMap.entries()];
-  const nutritionResults = await Promise.all(
-    entries.map(([barcode, { name, nutritionSource }]) =>
-      getNutritionSource(nutritionSource).fetchNutrition(barcode, name)
-    )
-  );
+  // Batch-fetch all OFF barcodes in one request; fetch other sources in parallel.
+  const off = getNutritionSource("openfoodfacts") as OpenFoodFactsSource;
+  const [offMap, otherResults] = await Promise.all([
+    off.fetchNutritionBatch(offItems),
+    Promise.all(
+      otherItems.map(({ barcode, fallbackName, source }) =>
+        getNutritionSource(source).fetchNutrition(barcode, fallbackName)
+      )
+    ),
+  ]);
 
-  const nutritionMap = new Map<string, ResolvedNutrition>();
-  nutritionResults.forEach((r) => nutritionMap.set(r.barcode, r));
+  const nutritionMap = new Map<string, ResolvedNutrition>(offMap);
+  otherResults.forEach((r) => nutritionMap.set(r.barcode, r));
 
   const exact = plan.exact ?? false;
   const formatter = MeasurementFormatterFactory.create(exact, lang);

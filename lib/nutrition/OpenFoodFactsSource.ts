@@ -117,14 +117,81 @@ class OFFAdapter {
 
 const adapter = new OFFAdapter();
 
+const OFF_HEADERS = {
+  "User-Agent": "MealPlanApp/1.0 (https://github.com/meal-plan-app)",
+};
+
+const NUTRITION_FIELDS = "code,product_name,nutriments";
+const DETAIL_FIELDS = "product_name,brands,quantity,image_front_url,image_url,nutriscore_grade,nova_group,ingredients_text,allergens,nutriments";
+
+function offUrl(barcode: string, fields: string) {
+  return `https://world.openfoodfacts.org/api/v2/product/${barcode}?fields=${fields}`;
+}
+
+interface OFFSearchResponse {
+  products?: (OFFProduct & { code?: string })[];
+}
+
 export class OpenFoodFactsSource implements NutritionSource {
   readonly label = "OpenFoodFacts";
+
+  async fetchNutritionBatch(
+    items: { barcode: string; fallbackName: string }[]
+  ): Promise<Map<string, ResolvedNutrition>> {
+    const result = new Map<string, ResolvedNutrition>();
+    if (items.length === 0) return result;
+
+    // Seed with nulls so every barcode has an entry even if the API misses it.
+    for (const { barcode, fallbackName } of items) {
+      result.set(barcode, adapter.nullNutrition(barcode, fallbackName));
+    }
+
+    try {
+      const codes = items.map((i) => i.barcode).join(",");
+      const url = `https://world.openfoodfacts.org/api/v2/search?code=${codes}&fields=${NUTRITION_FIELDS}&page_size=${items.length}`;
+
+      let res = await fetch(url, {
+        headers: OFF_HEADERS,
+        signal: AbortSignal.timeout(12000),
+        next: { revalidate: 86400 },
+      });
+
+      // Retry once after a short wait if rate-limited.
+      if (res.status === 429) {
+        await new Promise((r) => setTimeout(r, 2000));
+        res = await fetch(url, {
+          headers: OFF_HEADERS,
+          signal: AbortSignal.timeout(12000),
+          next: { revalidate: 86400 },
+        });
+      }
+
+      if (!res.ok) return result;
+
+      const data = (await res.json()) as OFFSearchResponse;
+      const fallbackMap = new Map(items.map((i) => [i.barcode, i.fallbackName]));
+
+      for (const product of data.products ?? []) {
+        const barcode = product.code;
+        if (!barcode) continue;
+        const fallbackName = fallbackMap.get(barcode) ?? "";
+        result.set(
+          barcode,
+          adapter.adaptNutrition(barcode, fallbackName, { status: 1, product })
+        );
+      }
+    } catch {
+      // already seeded with nulls above
+    }
+
+    return result;
+  }
 
   async fetchNutrition(barcode: string, fallbackName: string): Promise<ResolvedNutrition> {
     try {
       const res = await fetch(
-        `https://world.openfoodfacts.org/api/v0/product/${barcode}.json`,
-        { next: { revalidate: 86400 } }
+        offUrl(barcode, NUTRITION_FIELDS),
+        { headers: OFF_HEADERS, signal: AbortSignal.timeout(8000), next: { revalidate: 86400 } }
       );
       if (!res.ok) return adapter.nullNutrition(barcode, fallbackName);
       const data = (await res.json()) as OFFApiResponse;
@@ -137,8 +204,8 @@ export class OpenFoodFactsSource implements NutritionSource {
   async fetchDetail(barcode: string): Promise<ProductDetail> {
     try {
       const res = await fetch(
-        `https://world.openfoodfacts.org/api/v0/product/${barcode}.json`,
-        { next: { revalidate: 86400 } }
+        offUrl(barcode, DETAIL_FIELDS),
+        { headers: OFF_HEADERS, signal: AbortSignal.timeout(8000), next: { revalidate: 86400 } }
       );
       if (!res.ok) return adapter.nullDetail();
       const data = (await res.json()) as OFFApiResponse;

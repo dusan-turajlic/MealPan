@@ -5,6 +5,7 @@ import { ResolvedMealPlan, MacroValues, ResolvedIngredient } from "@/lib/types";
 import { sumMacros } from "@/lib/calculateMacros";
 import { loadSwaps, saveSwaps } from "@/lib/swap/storage";
 import { SwapContext, CategoryPool, SwappableCategory } from "@/lib/swap/context";
+import { ProductDetailProvider } from "@/lib/productDetail/context";
 import ProfileTabBar from "./ProfileTabBar";
 import InfoAccordion from "./InfoAccordion";
 import DailyTotalsBar from "./DailyTotalsBar";
@@ -146,6 +147,7 @@ export default function MealPlanClient({ plan, name }: Props) {
   }, [activeProfile, selectedOptions, swaps, categoryPool]);
 
   return (
+    <ProductDetailProvider>
     <SwapContext.Provider
       value={{ swaps, categoryPool, onSwap: handleSwap, onReset: handleReset }}
     >
@@ -193,5 +195,6 @@ export default function MealPlanClient({ plan, name }: Props) {
         </div>
       </div>
     </SwapContext.Provider>
+    </ProductDetailProvider>
   );
 }

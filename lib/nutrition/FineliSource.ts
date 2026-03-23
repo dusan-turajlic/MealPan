@@ -87,6 +87,11 @@ class FineliAdapter {
 
 const adapter = new FineliAdapter();
 
+const FINELI_HEADERS = {
+  "User-Agent": "MealPlanApp/1.0",
+  "Accept": "application/json",
+};
+
 export class FineliSource implements NutritionSource {
   readonly label = "Fineli";
 
@@ -94,7 +99,7 @@ export class FineliSource implements NutritionSource {
     try {
       const res = await fetch(
         `https://fineli.fi/fineli/api/v1/foods/${id}`,
-        { next: { revalidate: 86400 } }
+        { headers: FINELI_HEADERS, signal: AbortSignal.timeout(8000), next: { revalidate: 86400 } }
       );
       if (!res.ok) return adapter.nullNutrition(id, fallbackName);
       const data = (await res.json()) as FineliFood;
@@ -108,7 +113,7 @@ export class FineliSource implements NutritionSource {
     try {
       const res = await fetch(
         `https://fineli.fi/fineli/api/v1/foods/${id}`,
-        { next: { revalidate: 86400 } }
+        { headers: FINELI_HEADERS, signal: AbortSignal.timeout(8000), next: { revalidate: 86400 } }
       );
       if (!res.ok) return adapter.nullDetail();
       const data = (await res.json()) as FineliFood;

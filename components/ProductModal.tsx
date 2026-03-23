@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { ProductDetail } from "@/lib/types";
+import { useProductDetail } from "@/lib/productDetail/context";
 
 interface Props {
   productId: string;
@@ -31,25 +31,17 @@ const novaColors: Record<number, string> = {
 };
 
 export default function ProductModal({ productId, nutritionSource, fallbackName, onClose }: Props) {
-  const [detail, setDetail] = useState<ProductDetail | null>(null);
+  const detail = useProductDetail(productId);
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
-    // Scroll lock
     document.body.style.overflow = "hidden";
-    // Trigger CSS transition
     const raf = requestAnimationFrame(() => setVisible(true));
-
-    fetch(`/api/${nutritionSource}/${productId}`)
-      .then((r) => r.json())
-      .then((d: ProductDetail) => setDetail(d))
-      .catch(() => setDetail({ available: false } as ProductDetail));
-
     return () => {
       document.body.style.overflow = "";
       cancelAnimationFrame(raf);
     };
-  }, [productId, nutritionSource]);
+  }, []);
 
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
