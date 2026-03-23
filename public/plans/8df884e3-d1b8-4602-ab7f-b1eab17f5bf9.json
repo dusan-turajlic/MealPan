@@ -1,0 +1,1906 @@
+{
+  "version": 1,
+  "description": "Prvi koraci prema novom smeru",
+  "exact": false,
+  "info": [
+    {
+      "title": "Jedenje vani – drži se plana",
+      "body": "Na bife: uvek počni s povrćem i napuni dobar deo tanjira pre nego uzmeš išta drugo. Onda idi na proteine – biraj nemasne opcije s malo ili bez sosa, jer sosovi često kriju šećer. Kad imaš povrće i proteine, dodaj ugljene hidrate: fokusiraj se na rižu, krumpir i slično što ne šalje šećer u krvi u oblake. Zamisli slične porcije kao što bi složio/la kod kuće. U restoranu s a la carte: prouči jelovnik i nađi što ti najviše odgovara za tvoje ciljeve. Salate s proteinima su uvek dobar izbor – samo reci da ne dodaju extra sos. Povrće je ionako super i samo za sebe."
+    },
+    {
+      "title": "Redovni obroci – prekinimo začarani krug",
+      "body": "Kad jedeš u neravnomernim intervalima, šećer u krvi se nakuplja i ruši – što dovodi do nekontrolisane pohlepe za hranom i prejedanja. Jedi 5 puta dnevno s razmakom od 3–4 sata. Ne preskači obrok, čak i kad nisi gladan/gladna: to sprečava sledeći napad prejedanja."
+    },
+    {
+      "title": "Proteini te drže sitim",
+      "body": "Ciljaj na 25–30 grama proteina po obroku. Keso, grčki jogurt, jaja i pileći file su jeftini i lako dostupni u prodavnicama. Dovoljno proteina smanjuje žudnju za slatkim i drži šećer u krvi stabilnijim ceo dan."
+    },
+    {
+      "title": "Nizak GI – insulinska rezistencija pod kontrolom",
+      "body": "Kod insulinske rezistencije telo loše reaguje na ugljene hidrate. Biraj samo namirnice s niskim glikemijskim indeksom: zobene pahuljice (GI ≈55), slatki krumpir (GI ≈44), crvena leća (GI ≈29), bobičasto voće (GI ≈25–40) i krekeri (GI ≈50). Izbegavaj bijelu rižu, bijeli kruh, bijelu testeninu i namirnice sa šećerom."
+    },
+    {
+      "title": "Uvek počni s povrćem",
+      "body": "Navikni se da svaki obrok počinješ s povrćem – bilo da je to brokoli, krastavac, paradajz, salata ili nešto drugo. Redosled kojim jedeš hranu igra veliku ulogu u tome kako telo reaguje. Kad prvo pojedeš povrće, vlakna oblože zid creva i stvaraju neku vrstu barijere koja usporava koliko brzo glukoza ulazi u krv kad nakon toga dođu ugljeni hidrati. To znači da šećer u krvi raste sporije i ravnomernije umesto da skoči naglo. Manji i ravnomerniji porast šećera u krvi zauzvrat zahteva manje insulina od gušterače. Dugoročno to smanjuje opterećenje insulinskog sistema i pomaže telu da opet postane osetljivije na insulin – a to je suština rešavanja insulinske rezistencije. Čak i mala količina povrća pre ostatka obroka je dovoljna da postigne ovaj efekat."
+    },
+    {
+      "title": "Pametni međuobroci",
+      "body": "Uvek imaj spreman proteinski međuobrok: keso, grčki jogurt ili kuvano jaje. Kad te uhvati glad – pojedi ga. Ne preskači ga. Kontrolisani međuobrok sprečava da se prejedeš na sledećem obroku."
+    }
+  ],
+  "profiles": [
+    {
+      "id": "vardagar",
+      "label": "Radni dani",
+      "days": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "meals": [
+        {
+          "id": "frukost",
+          "label": "Doručak",
+          "options": [
+            {
+              "id": "havregrynsgrot",
+              "label": "Zobena kaša s kesom i borovnicama",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489944102",
+                    "name": "Lidl zobene pahuljice",
+                    "category": "carb",
+                    "gPerDl": 40,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 15,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7394376616037",
+                    "name": "Oatly zobeno mlijeko",
+                    "category": "mixed",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "dl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (bez masnoće)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405086716",
+                    "name": "Pirkka smrznute borovnice",
+                    "category": "carb",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
+                  },
+                  "amount": 30,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "376",
+                    "name": "Oras",
+                    "category": "fat",
+                    "nutritionSource": "fineli",
+                    "packageSizeG": 7,
+                    "fallbackEmoji": "🧠"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                }
+              ]
+            },
+            {
+              "id": "aggröra-knackebrod",
+              "label": "Kajgana i krekeri",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6430029764449",
+                    "name": "Kieku jaja slobodnog uzgoja L",
+                    "category": "protein",
+                    "packageSizeG": 64,
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (bez masnoće)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191112179",
+                    "name": "Sezamov kreker",
+                    "category": "carb",
+                    "packageSizeG": 14,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "formiddagsmellanmal",
+          "label": "Prepodnevni međuobrok",
+          "options": [
+            {
+              "id": "proteinpudding-choklad",
+              "label": "Proteinski puding čokolada",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489216162",
+                    "name": "Milbona proteinski puding čokolada",
+                    "category": "protein",
+                    "packageSizeG": 152,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "kpl"
+                }
+              ]
+            },
+            {
+              "id": "skyr-blåbär",
+              "label": "Skyr i borovnice",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489118213",
+                    "name": "Milbona skyr borovnica",
+                    "category": "protein",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405086716",
+                    "name": "Pirkka smrznute borovnice",
+                    "category": "carb",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-jordgubbar",
+              "label": "Skyr i jagode",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491224",
+                    "name": "Milbona skyr jagoda",
+                    "category": "protein",
+                    "packageSizeG": 450,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "447",
+                    "name": "Jagoda (sveža)",
+                    "category": "carb",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 60
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-hallon",
+              "label": "Skyr i maline",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491231",
+                    "name": "Milbona skyr malina",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405181091",
+                    "name": "Pirkka finska malina",
+                    "category": "carb",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-jordgubbe-flavor",
+              "label": "Milbona skyr jagoda",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491224",
+                    "name": "Milbona skyr jagoda",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-hallon-flavor",
+              "label": "Milbona skyr malina",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491231",
+                    "name": "Milbona skyr malina",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-blabar-flavor",
+              "label": "Milbona skyr borovnica",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489118213",
+                    "name": "Milbona skyr borovnica",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 500
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-vanilj",
+              "label": "Milbona skyr vanilija",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491248",
+                    "name": "Milbona skyr vanilija",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "agg-fetaost",
+              "label": "Kuvana jaja i feta sir",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6430029764449",
+                    "name": "Kieku jaja slobodnog uzgoja L",
+                    "category": "protein",
+                    "packageSizeG": 64,
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "6416710300875",
+                    "name": "Filos feta sir",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 30,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "keso-gurka",
+              "label": "Keso s krastavcem",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (bez masnoće)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "346",
+                    "name": "Krastavac",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "kokta-agg",
+              "label": "Kuvana jaja",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6430029764449",
+                    "name": "Kieku jaja slobodnog uzgoja L",
+                    "category": "protein",
+                    "packageSizeG": 64,
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                }
+              ]
+            },
+            {
+              "id": "natthavreburk",
+              "label": "Overnight oats",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489944102",
+                    "name": "Lidl zobene pahuljice",
+                    "category": "carb",
+                    "gPerDl": 40,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 15,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "4056489491217",
+                    "name": "Milbona skyr natural",
+                    "category": "protein",
+                    "packageSizeG": 450,
+                    "gPerDl": 100,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405086716",
+                    "name": "Pirkka smrznute borovnice",
+                    "category": "carb",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
+                  },
+                  "amount": 30,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "31211",
+                    "name": "Semenke bundeve",
+                    "category": "fat",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            },
+            {
+              "id": "keso-pumpafrön",
+              "label": "Keso s semenkama bundeve i krastavcem",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (bez masnoće)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "31211",
+                    "name": "Semenke bundeve",
+                    "category": "fat",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                },
+                {
+                  "source": {
+                    "barcode": "346",
+                    "name": "Krastavac",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "mandlar",
+              "label": "Bademi i keso",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "379",
+                    "name": "Badem",
+                    "category": "fat",
+                    "nutritionSource": "fineli",
+                    "packageSizeG": 1.2
+                  },
+                  "amount": 25,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (bez masnoće)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "lunch",
+          "label": "Ručak",
+          "options": [
+            {
+              "id": "pikok-kyckling-sotpotatis",
+              "label": "Kuvano pile i slatki krumpir",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Kuvani file piletine",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "30223",
+                    "name": "Slatki krumpir",
+                    "category": "carb",
+                    "packageSizeG": 200,
+                    "nutritionSource": "fineli",
+                    "fallbackEmoji": "🍠"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405067555",
+                    "name": "Pirkka smrznuti brokoli",
+                    "category": "mixed",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow ekstra djevičansko maslinovo ulje",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            },
+            {
+              "id": "kalkon-linser",
+              "label": "Puretina i crvena leća",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6409100022549",
+                    "name": "Kariniemi meso puretine",
+                    "category": "protein",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191145771",
+                    "name": "Coop crvena leća (kuvana)",
+                    "category": "mixed",
+                    "packageSizeG": 230,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 115,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410402011865",
+                    "name": "Pirkka pasiran paradajz",
+                    "category": "mixed",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 250,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405067555",
+                    "name": "Pirkka smrznuti brokoli",
+                    "category": "mixed",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "11212",
+                    "name": "Semenke suncokreta",
+                    "category": "fat",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            },
+            {
+              "id": "kyckling-potatis-fryst-paprika",
+              "label": "Pile i krumpiri sa smrznutom paprikom",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Kuvani file piletine",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "2033",
+                    "name": "Kuhani krumpiri",
+                    "category": "carb",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 120,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "355",
+                    "name": "Paprika (miješana, smrznuta)",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 80
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow ekstra djevičansko maslinovo ulje",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            },
+            {
+              "id": "kyckling-potatis-farsk-paprika",
+              "label": "Pile i krumpiri sa svežom paprikom",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Kuvani file piletine",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "2033",
+                    "name": "Kuhani krumpiri",
+                    "category": "carb",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 120,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "355",
+                    "name": "Paprika (sveža)",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 80
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow ekstra djevičansko maslinovo ulje",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "middag",
+          "label": "Večera",
+          "options": [
+            {
+              "id": "kalkonbolognese-pasta",
+              "label": "Bolognese od puretine s integralnom testeninom",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6409100022549",
+                    "name": "Kariniemi meso puretine",
+                    "category": "protein",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6411200100256",
+                    "name": "Torino integralna testenina",
+                    "category": "carb",
+                    "packageSizeG": 500,
+                    "gPerDl": 90,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 25,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410402011865",
+                    "name": "Pirkka pasiran paradajz",
+                    "category": "mixed",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 250,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405067555",
+                    "name": "Pirkka smrznuti brokoli",
+                    "category": "mixed",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow ekstra djevičansko maslinovo ulje",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            },
+            {
+              "id": "pikok-kyckling-linsgrytan",
+              "label": "Kuvano pile i varivo od leće",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Kuvani file piletine",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191145771",
+                    "name": "Coop crvena leća (kuvana)",
+                    "category": "mixed",
+                    "packageSizeG": 230,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 115,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410402011865",
+                    "name": "Pirkka pasiran paradajz",
+                    "category": "mixed",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 250,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405067555",
+                    "name": "Pirkka smrznuti brokoli",
+                    "category": "mixed",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow ekstra djevičansko maslinovo ulje",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            },
+            {
+              "id": "kalkon-basmatiris",
+              "label": "Puretina i basmati riža sa špinatom",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6409100022549",
+                    "name": "Kariniemi meso puretine",
+                    "category": "protein",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "30346",
+                    "name": "Basmati riža (kuhana)",
+                    "category": "carb",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 65
+                  },
+                  "amount": 80,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410402011865",
+                    "name": "Pirkka pasiran paradajz",
+                    "category": "mixed",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "34228",
+                    "name": "Špinat (smrznut)",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 80
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow ekstra djevičansko maslinovo ulje",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "kvallsmal",
+          "label": "Večernji obrok",
+          "options": [
+            {
+              "id": "proteinpudding-vanilj",
+              "label": "Proteinski puding vanilija",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489216155",
+                    "name": "Milbona proteinski puding vanilija",
+                    "category": "protein",
+                    "packageSizeG": 152,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "kpl"
+                }
+              ]
+            },
+            {
+              "id": "skyr-blåbär-em",
+              "label": "Skyr i borovnice",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489118213",
+                    "name": "Milbona skyr borovnica",
+                    "category": "protein",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405086716",
+                    "name": "Pirkka smrznute borovnice",
+                    "category": "carb",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-jordgubbar-em",
+              "label": "Skyr i jagode",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491224",
+                    "name": "Milbona skyr jagoda",
+                    "category": "protein",
+                    "packageSizeG": 450,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "447",
+                    "name": "Jagoda (sveža)",
+                    "category": "carb",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 60
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-hallon-em",
+              "label": "Skyr i maline",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491231",
+                    "name": "Milbona skyr malina",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405181091",
+                    "name": "Pirkka finska malina",
+                    "category": "carb",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-jordgubbe-flavor-em",
+              "label": "Milbona skyr jagoda",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491224",
+                    "name": "Milbona skyr jagoda",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-hallon-flavor-em",
+              "label": "Milbona skyr malina",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491231",
+                    "name": "Milbona skyr malina",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-blabar-flavor-em",
+              "label": "Milbona skyr borovnica",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489118213",
+                    "name": "Milbona skyr borovnica",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 500
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-vanilj-em",
+              "label": "Milbona skyr vanilija",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491248",
+                    "name": "Milbona skyr vanilija",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "knackebrod-keso",
+              "label": "Krekeri i keso",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "7340191112179",
+                    "name": "Sezamov kreker",
+                    "category": "carb",
+                    "packageSizeG": 14,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (bez masnoće)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "keso-pumpafrön",
+              "label": "Keso s semenkama bundeve i krastavcem",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (bez masnoće)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "31211",
+                    "name": "Semenke bundeve",
+                    "category": "fat",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 2,
+                  "unit": "msk"
+                },
+                {
+                  "source": {
+                    "barcode": "346",
+                    "name": "Krastavac",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "mandlar",
+              "label": "Bademi i keso",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "379",
+                    "name": "Badem",
+                    "category": "fat",
+                    "nutritionSource": "fineli",
+                    "packageSizeG": 1.2
+                  },
+                  "amount": 25,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (bez masnoće)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "veckoslut",
+      "label": "Vikend",
+      "days": [
+        0,
+        6
+      ],
+      "meals": [
+        {
+          "id": "brunch",
+          "label": "Brunch",
+          "options": [
+            {
+              "id": "proteinpannkakor",
+              "label": "Proteinske palačinke s borovnicama",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489944102",
+                    "name": "Lidl zobene pahuljice",
+                    "category": "carb",
+                    "gPerDl": 40,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 40,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7394376616037",
+                    "name": "Oatly zobeno mlijeko",
+                    "category": "mixed",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "dl"
+                },
+                {
+                  "source": {
+                    "barcode": "6430029764449",
+                    "name": "Kieku jaja slobodnog uzgoja L",
+                    "category": "protein",
+                    "packageSizeG": 64,
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (bez masnoće)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405086716",
+                    "name": "Pirkka smrznute borovnice",
+                    "category": "carb",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
+                  },
+                  "amount": 30,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "376",
+                    "name": "Oras",
+                    "category": "fat",
+                    "nutritionSource": "fineli",
+                    "packageSizeG": 7,
+                    "fallbackEmoji": "🧠"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                }
+              ]
+            },
+            {
+              "id": "aggröra-knackebrod-yoghurt",
+              "label": "Kajgana s krekerom i jogurtom",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6430029764449",
+                    "name": "Kieku jaja slobodnog uzgoja L",
+                    "category": "protein",
+                    "packageSizeG": 64,
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
+                  },
+                  "amount": 3,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191112179",
+                    "name": "Sezamov kreker",
+                    "category": "carb",
+                    "packageSizeG": 14,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "6408430407545",
+                    "name": "Valio A+ grčki jogurt",
+                    "category": "protein",
+                    "packageSizeG": 1000,
+                    "gPerDl": 100,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "379",
+                    "name": "Badem",
+                    "category": "fat",
+                    "nutritionSource": "fineli",
+                    "packageSizeG": 1.2
+                  },
+                  "amount": 17,
+                  "unit": "kpl"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "mellanmal",
+          "label": "Međuobrok",
+          "options": [
+            {
+              "id": "proteinpudding-choklad-vs",
+              "label": "Proteinski puding čokolada",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489216162",
+                    "name": "Milbona proteinski puding čokolada",
+                    "category": "protein",
+                    "packageSizeG": 152,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "kpl"
+                }
+              ]
+            },
+            {
+              "id": "skyr-blåbär-vs",
+              "label": "Skyr i borovnice",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489118213",
+                    "name": "Milbona skyr borovnica",
+                    "category": "protein",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405086716",
+                    "name": "Pirkka smrznute borovnice",
+                    "category": "carb",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🫐"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-jordgubbar-vs",
+              "label": "Skyr i jagode",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491224",
+                    "name": "Milbona skyr jagoda",
+                    "category": "protein",
+                    "packageSizeG": 450,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "447",
+                    "name": "Jagoda (sveža)",
+                    "category": "carb",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 60
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-hallon-vs",
+              "label": "Skyr i maline",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491231",
+                    "name": "Milbona skyr malina",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405181091",
+                    "name": "Pirkka finska malina",
+                    "category": "carb",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 50,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-jordgubbe-flavor-vs",
+              "label": "Milbona skyr jagoda",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491224",
+                    "name": "Milbona skyr jagoda",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-hallon-flavor-vs",
+              "label": "Milbona skyr malina",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491231",
+                    "name": "Milbona skyr malina",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-blabar-flavor-vs",
+              "label": "Milbona skyr borovnica",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489118213",
+                    "name": "Milbona skyr borovnica",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 500
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "skyr-vanilj-vs",
+              "label": "Milbona skyr vanilija",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "4056489491248",
+                    "name": "Milbona skyr vanilija",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "packageSizeG": 450
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "agg-fetaost-vs",
+              "label": "Kuvana jaja i feta sir",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6430029764449",
+                    "name": "Kieku jaja slobodnog uzgoja L",
+                    "category": "protein",
+                    "packageSizeG": 64,
+                    "nutritionSource": "openfoodfacts",
+                    "fallbackEmoji": "🥚"
+                  },
+                  "amount": 2,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "6416710300875",
+                    "name": "Filos feta sir",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 30,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "keso-gurka-vs",
+              "label": "Keso s krastavcem",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (bez masnoće)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "346",
+                    "name": "Krastavac",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "keso-pumpafrön",
+              "label": "Keso s semenkama bundeve i krastavcem",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (bez masnoće)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "31211",
+                    "name": "Semenke bundeve",
+                    "category": "fat",
+                    "nutritionSource": "fineli"
+                  },
+                  "amount": 2,
+                  "unit": "msk"
+                },
+                {
+                  "source": {
+                    "barcode": "346",
+                    "name": "Krastavac",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            },
+            {
+              "id": "mandlar",
+              "label": "Bademi i keso",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "379",
+                    "name": "Badem",
+                    "category": "fat",
+                    "nutritionSource": "fineli",
+                    "packageSizeG": 1.2
+                  },
+                  "amount": 25,
+                  "unit": "kpl"
+                },
+                {
+                  "source": {
+                    "barcode": "20886875",
+                    "name": "Milbona keso (bez masnoće)",
+                    "category": "protein",
+                    "nutritionSource": "openfoodfacts",
+                    "gPerDl": 100
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "middag",
+          "label": "Večera",
+          "options": [
+            {
+              "id": "pikok-kyckling-sotpotatis-vs",
+              "label": "Kuvano pile i slatki krumpir",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Kuvani file piletine",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 175,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "30223",
+                    "name": "Slatki krumpir",
+                    "category": "carb",
+                    "packageSizeG": 200,
+                    "nutritionSource": "fineli",
+                    "fallbackEmoji": "🍠"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405067555",
+                    "name": "Pirkka smrznuti brokoli",
+                    "category": "mixed",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow ekstra djevičansko maslinovo ulje",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            },
+            {
+              "id": "kalkon-linsgrytan-vs",
+              "label": "Puretina i varivo od leće",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6409100022549",
+                    "name": "Kariniemi meso puretine",
+                    "category": "protein",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191145771",
+                    "name": "Coop crvena leća (kuvana)",
+                    "category": "mixed",
+                    "packageSizeG": 230,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 115,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410402011865",
+                    "name": "Pirkka pasiran paradajz",
+                    "category": "mixed",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 250,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410405067555",
+                    "name": "Pirkka smrznuti brokoli",
+                    "category": "mixed",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow ekstra djevičansko maslinovo ulje",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            },
+            {
+              "id": "kyckling-potatis-fryst-paprika-vs",
+              "label": "Pile i krumpiri sa smrznutom paprikom",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Kuvani file piletine",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "2033",
+                    "name": "Kuhani krumpiri",
+                    "category": "carb",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 120,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "355",
+                    "name": "Paprika (miješana, smrznuta)",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 80
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow ekstra djevičansko maslinovo ulje",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            },
+            {
+              "id": "kyckling-potatis-farsk-paprika-vs",
+              "label": "Pile i krumpiri sa svežom paprikom",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "20287481",
+                    "name": "Kuvani file piletine",
+                    "category": "protein",
+                    "packageSizeG": 175,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "2033",
+                    "name": "Kuhani krumpiri",
+                    "category": "carb",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 100
+                  },
+                  "amount": 120,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "355",
+                    "name": "Paprika (sveža)",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 80
+                  },
+                  "amount": 150,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow ekstra djevičansko maslinovo ulje",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            },
+            {
+              "id": "kalkon-basmatiris-vs",
+              "label": "Puretina i basmati riža sa špinatom",
+              "ingredients": [
+                {
+                  "source": {
+                    "barcode": "6409100022549",
+                    "name": "Kariniemi meso puretine",
+                    "category": "protein",
+                    "packageSizeG": 400,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 133,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "30346",
+                    "name": "Basmati riža (kuhana)",
+                    "category": "carb",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 65
+                  },
+                  "amount": 80,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "6410402011865",
+                    "name": "Pirkka pasiran paradajz",
+                    "category": "mixed",
+                    "packageSizeG": 500,
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 200,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "34228",
+                    "name": "Špinat (smrznut)",
+                    "category": "mixed",
+                    "nutritionSource": "fineli",
+                    "gPerDl": 80
+                  },
+                  "amount": 100,
+                  "unit": "g"
+                },
+                {
+                  "source": {
+                    "barcode": "7340191129061",
+                    "name": "Rainbow ekstra djevičansko maslinovo ulje",
+                    "category": "fat",
+                    "nutritionSource": "openfoodfacts"
+                  },
+                  "amount": 1,
+                  "unit": "msk"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
